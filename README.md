@@ -59,15 +59,16 @@ empty.
 | Reviews | Seven records' press as a list, each open in place with its cover |
 | Tours | Bands on tour 1–4 by dates; 45 dates as a list |
 | Store | Browse by artist (a select that filters the page) and category tabs; CDs, T-shirts, posters, buttons, a hoodie, a hat, one band per category, 37 items, squares the items do not fill carrying the lowest price and the shipping time; every item opens to a product view with the picture large, price and sale tag, description, item code, availability by size, a size select, a quantity, and an Add to cart that is present and disabled; the store policy |
-| Audio | 14 MP3s in three bands of five with a player in every square; a list at 390 |
+| Audio | 14 MP3s in three bands of five, every square playable: the native player where there is room for it, a single play control with the time where there is not, one song at a time; a list at 390 |
 | Media | Buddy icons in three bands of eight, two squares of type and six icons each; wallpapers 1–8 at full size; three videos 1–3; the podcast |
 | Information | Contact 1–3; FAQ, jobs, street team and links as lists and prose |
 
 Every image, cover, item and post opens in place; a poster's film plays on
 request; every MP3 plays where it sits. The navigation is the original's
-five groups as a bar of dark tabs: the page's own group is open on arrival,
-the others drop down on hover, focus or click, with an empty cart beside
-them that says the checkout is retired. Breakpoints live in
+five groups as a bar of dark tabs of one size: each drops down on hover,
+focus or click, the page's own group is marked in red, and an empty cart
+sits at the end saying the checkout is retired. On a phone the groups
+stack and the page's own is open. Breakpoints live in
 [`src/lib/viewport.ts`](src/lib/viewport.ts).
 
 ## Register

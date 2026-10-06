@@ -30,7 +30,7 @@ export function Page({ current, title, standfirst, children }: { current: string
           {NAV.map((g) => {
             const here = g.links.some(([href]) => href.split("#")[0] === current);
             return (
-              <details className={`nav__group${here ? " nav__group--here" : ""}`} key={g.group} open={here}>
+              <details className={`nav__group${here ? " nav__group--here" : ""}`} key={g.group} open={here && window.innerWidth < 1100}>
                 <summary className="nav__head">{g.group}<span className="nav__count" aria-hidden="true">{g.links.length}</span></summary>
                 <ul>
                   {g.links.map(([href, label]) => (

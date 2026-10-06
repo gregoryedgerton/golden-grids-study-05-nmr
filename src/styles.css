@@ -70,7 +70,7 @@ a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--
    open on click, or on hover and focus at desktop widths. */
 .nav { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--ink); position: relative; }
 .nav__group { position: relative; }
-.nav__head { margin: 0; list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 6px 12px; font: 700 12px/1.3 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--panel-2); background: var(--ink); border: 1px solid var(--ink); }
+.nav__head { margin: 0; list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; font: 700 12px/1.3 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--panel-2); background: var(--ink); border: 1px solid var(--ink); }
 .nav__head::-webkit-details-marker { display: none; }
 .nav__head:hover, .nav__group[open] > .nav__head { background: var(--red-ground); border-color: var(--red-ground); color: #fff; }
 .nav__group--here > .nav__head { box-shadow: inset 0 -3px 0 var(--red); }
@@ -79,17 +79,18 @@ a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--
 .nav a { text-decoration: none; display: inline-block; padding: 4px 0; min-height: 24px; }
 .nav a:hover { text-decoration: underline; }
 .nav [aria-current] { font-weight: 700; border-bottom: 2px solid var(--red); }
-.nav__cart { margin: 0 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 6px 12px; font: 700 12px/1.3 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); border: 1px dashed var(--ink-soft); }
+.nav__cart { margin: 0 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; font: 700 12px/1.3 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); border: 1px dashed var(--ink-soft); }
 .nav__cartglyph { color: var(--red); }
 @media (min-width: 1100px) {
-  /* Desktop: the panels drop down over the page, and open on hover and focus. */
-  .nav__group ul { position: absolute; left: 0; top: 100%; z-index: 4; min-width: 220px; display: grid; gap: 2px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
-  .nav__group:hover > .nav__head, .nav__group:focus-within > .nav__head { background: var(--red-ground); border-color: var(--red-ground); color: #fff; }
-  .nav__group:not([open]):hover > ul, .nav__group:not([open]):focus-within > ul { display: grid; }
+  /* Desktop: every tab the same size, every panel a dropdown over the page,
+     open on hover, focus or click; the current group is marked, not
+     expanded, so the bar is one even row. */
+  .nav__head { min-height: 40px; padding: 0 14px; }
+  .nav__cart { min-height: 40px; padding: 0 14px; }
+  .nav__group ul { position: absolute; left: 0; top: 100%; z-index: 4; min-width: 240px; display: grid; gap: 2px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
   .nav__group:not([open]) > ul { display: none; }
-  .nav__group--here > ul { position: static; box-shadow: none; display: flex !important; flex-wrap: wrap; border-top: 0; }
-  .nav__group--here { display: contents; }
-  .nav__group--here > ul { order: 10; flex: 1 1 100%; }
+  .nav__group:not([open]):hover > ul, .nav__group:not([open]):focus-within > ul { display: grid; }
+  .nav__group:hover > .nav__head, .nav__group:focus-within > .nav__head { background: var(--red-ground); border-color: var(--red-ground); color: #fff; }
 }
 .masthead__title { margin: 14px 0 0; font: 700 clamp(1.8rem, 4.5vw, 3.2rem)/1 var(--font); letter-spacing: -0.02em; text-transform: lowercase; color: var(--ink); }
 .masthead__standfirst { max-width: var(--measure); margin: 8px 0 0; color: var(--ink-soft); font-size: 17px; line-height: 1.5; }
@@ -150,9 +151,14 @@ a.box { text-decoration: none; color: inherit; }
 .media__open { position: absolute; inset: 0; border: 0; background: transparent; padding: 0; cursor: zoom-in; }
 .media__open:focus-visible { outline: 3px solid var(--red); outline-offset: -3px; }
 
-/* Audio in a square: the player sits at the foot of the song's box. */
+/* Audio in a square: the native player at the foot where there is room for
+   it, a single play control where there is not. Both drive one <audio>. */
 .box__audio { width: 100%; margin-top: auto; flex: 0 0 auto; height: 32px; }
-@container (max-width: 160px) { .box__audio { display: none; } }
+.song__play { display: none; margin-top: auto; align-self: flex-start; min-width: 32px; min-height: 32px; padding: 0 10px; font: 700 14px/1 var(--font); color: var(--panel-2); background: var(--ink); border: 0; cursor: pointer; align-items: center; gap: 8px; }
+.song__play[aria-pressed="true"] { background: var(--red-ground); color: #fff; }
+.song__time { font: 400 12px/1 var(--font); font-variant-numeric: tabular-nums; }
+@container (max-width: 260px) { .box__audio { display: none; } .song__play { display: inline-flex; } }
+@container (max-width: 64px) { .song__play { padding: 0; min-width: 28px; min-height: 28px; } .song__time { display: none; } }
 
 /* --- Expanded cell, prose from the crawl -------------------------------------- */
 .cell { padding: 14px 16px; background: var(--panel-2); border: 1px solid var(--ink); }

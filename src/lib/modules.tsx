@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { GoldenGrid, GoldenBox } from "@gifcommit/golden-grids";
 import type { PlacementValue } from "@gifcommit/golden-grids";
 import { useViewport, pick } from "./viewport";
@@ -129,12 +130,30 @@ export function ProductView({ item }: { item: Item }) {
   );
 }
 
+/**
+ * A song in a square, playable at every size. The native player needs
+ * about 260px; below that the square gets a single play/pause control and
+ * the time, driven by the same <audio>. One song plays at a time.
+ */
 export function SongCard({ song, label }: { song: Song; label?: string }) {
+  const ref = useRef<HTMLAudioElement>(null);
+  const [playing, setPlaying] = useState(false);
+  const [time, setTime] = useState("");
+  const toggle = () => {
+    const a = ref.current; if (!a) return;
+    if (a.paused) { document.querySelectorAll("audio").forEach((o) => { if (o !== a) o.pause(); }); a.play().catch(() => {}); } else a.pause();
+  };
+  const fmt = (t: number) => (isFinite(t) ? `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}` : "");
   return (
-    <div className="box">
+    <div className="box song">
       <p className="box__label">{label ?? song.band}</p>
       <div className="box__fit"><Fit as="p" max={120}>{song.song}</Fit></div>
-      <audio className="box__audio" controls preload="none" src={asset(song.file)} aria-label={`${song.band}, ${song.song}`} />
+      <audio ref={ref} className="box__audio" controls preload="none" src={asset(song.file)} aria-label={`${song.band}, ${song.song}`}
+        onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)}
+        onTimeUpdate={(e) => setTime(`${fmt(e.currentTarget.currentTime)}${isFinite(e.currentTarget.duration) ? ` / ${fmt(e.currentTarget.duration)}` : ""}`)} />
+      <button type="button" className="song__play" onClick={toggle} aria-label={`${playing ? "Pause" : "Play"} ${song.song} by ${song.band}`} aria-pressed={playing}>
+        <span aria-hidden="true">{playing ? "❚❚" : "▶"}</span>{time && <span className="song__time">{time}</span>}
+      </button>
     </div>
   );
 }
