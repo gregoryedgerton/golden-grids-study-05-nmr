@@ -58,13 +58,16 @@ empty.
 | Releases | The latest five 1–5; the first eight 1–8; the store |
 | Reviews | Seven records' press as a list, each open in place with its cover |
 | Tours | Bands on tour 1–4 by dates; 45 dates as a list |
-| Store | CDs, T-shirts, posters, buttons, a hoodie, a hat: one band per category, 37 items; the store policy |
+| Store | Browse by artist (a select that filters the page) and category tabs; CDs, T-shirts, posters, buttons, a hoodie, a hat, one band per category, 37 items, squares the items do not fill carrying the lowest price and the shipping time; every item opens to a product view with the picture large, price and sale tag, description, item code, availability by size, a size select, a quantity, and an Add to cart that is present and disabled; the store policy |
 | Audio | 14 MP3s in three bands of five with a player in every square; a list at 390 |
 | Media | Buddy icons in three bands of eight, two squares of type and six icons each; wallpapers 1–8 at full size; three videos 1–3; the podcast |
 | Information | Contact 1–3; FAQ, jobs, street team and links as lists and prose |
 
 Every image, cover, item and post opens in place; a poster's film plays on
-request; every MP3 plays where it sits. Breakpoints live in
+request; every MP3 plays where it sits. The navigation is the original's
+five groups as a bar of dark tabs: the page's own group is open on arrival,
+the others drop down on hover, focus or click, with an empty cart beside
+them that says the checkout is retired. Breakpoints live in
 [`src/lib/viewport.ts`](src/lib/viewport.ts).
 
 ## Register
@@ -103,8 +106,9 @@ same greys turned over under the same pattern.
 - **Banners are missing.** The banner pages were linked with single-quoted
   hrefs the crawler did not follow; the ads themselves are mirrored but not
   shown.
-- **The store does not sell.** Items, prices and sizes are there; the PayPal
-  cart is not, and the page says so.
+- **The store does not sell.** Items, prices, sizes and availability are
+  there and the controls work; the PayPal checkout is retired, so Add to
+  cart is disabled and says so.
 - **Eight-square bands cannot hold words.** Audio at 820 and 1440 moved to
   bands of five, and at 390 to a list, because the smallest of eight squares
   is 40px.

@@ -55,25 +55,77 @@ export function FeaturedItemsBand({ items, title = "Featured items" }: { items?:
 /** The contents of a store item's square. Only a direct GoldenBox counts as
  *  a GoldenGrid child, so these card components return the INSIDE of the
  *  box and the band wraps each in <GoldenBox {...x.boxProps(key)}>. */
+/** The price as the store printed it: "$5.00 SALE!!!" is a sale price. */
+export function priceOf(item: Item) {
+  if (!item.price) return { amount: null as string | null, sale: false };
+  const m = item.price.match(/\$[\d.]+/);
+  return { amount: m ? m[0] : item.price, sale: /sale/i.test(item.price) };
+}
+
 export function ItemCard({ item, x }: { item: Item; x: ReturnType<typeof useExpandGroup> }) {
   const key = item.code;
+  const { amount, sale } = priceOf(item);
   return (
     <>
-      <figure className="media media--contain">
+      <figure className="media media--contain product">
         {item.image && <img src={asset(item.image)} alt={item.imageAlt || `${item.band} ${item.title}`} loading="lazy" />}
         <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {item.band} {item.title}</span></button>
-        <figcaption className="media__caption">{item.price ? item.price.replace(" SALE!!!", "") : item.kind} · {item.band}</figcaption>
+        {sale && <span className="product__tag" aria-hidden="true">Sale</span>}
+        {!amount && <span className="product__tag product__tag--out" aria-hidden="true">Sold out</span>}
+        <figcaption className="media__caption"><span className="product__price">{amount ?? "—"}</span> {item.band} · {item.kind}</figcaption>
       </figure>
       {x.isOpen(key) && (
         <ExpandedCell id={x.panelId(key)} title={`${item.band} · ${item.title}`} onClose={x.close} closeRef={x.closeRef}>
-          <div className="cell__body">
-            {item.price && <p><strong>{item.price}</strong>{item.sizes.length ? ` · sizes: ${item.sizes.join(", ")}` : ""}</p>}
-            {item.description.map((p, i) => <p key={i}>{p}</p>)}
-            <p className="cell__source">Catalogue {item.code}. The store took PayPal; it is not connected here.</p>
-          </div>
+          <ProductView item={item} />
         </ExpandedCell>
       )}
     </>
+  );
+}
+
+/**
+ * The product page, as a store of the time had it: the picture large, the
+ * name and price, a size and a quantity, Add to cart, and what is in
+ * stock. The store took PayPal to the label's address; the checkout is
+ * retired, so the button is present and disabled and says why.
+ */
+export function ProductView({ item }: { item: Item }) {
+  const { amount, sale } = priceOf(item);
+  const sizes = item.sizes;
+  const available = amount !== null;
+  return (
+    <div className="product-view">
+      <figure className="product-view__media">
+        {item.image && <img src={asset(item.image)} alt={item.imageAlt || `${item.band} ${item.title}`} />}
+      </figure>
+      <form className="product-view__form" onSubmit={(e) => e.preventDefault()} aria-describedby={`${item.code}-note`}>
+        <p className="product-view__band">{item.band}</p>
+        <h4 className="product-view__title">{item.title}</h4>
+        <p className="product-view__price">
+          {amount ? <><span className="product-view__amount">{amount}</span>{sale && <span className="product-view__sale">Summer sale</span>}</> : <span className="product-view__amount product-view__amount--out">Sold out</span>}
+        </p>
+        {item.description.map((p, i) => <p key={i} className="product-view__copy">{p}</p>)}
+        <dl className="product-view__facts">
+          <div><dt>Item</dt><dd>{item.code}</dd></div>
+          <div><dt>Type</dt><dd>{item.kind}</dd></div>
+          <div><dt>Availability</dt><dd>{available ? (sizes.length ? `In stock: ${sizes.join(", ")}` : "In stock") : "Sold out"}</dd></div>
+          <div><dt>Shipping</dt><dd>2–3 weeks to process, fill, pack and ship</dd></div>
+        </dl>
+        <div className="product-view__controls">
+          {sizes.length > 0 && (
+            <label>Size
+              <select name="size" defaultValue="" disabled={!available}>
+                <option value="">Choose a size</option>
+                {sizes.map((s) => <option key={s} value={s}>{s}</option>)}
+              </select>
+            </label>
+          )}
+          <label>Quantity<input type="number" name="qty" min={1} max={9} defaultValue={1} disabled={!available} /></label>
+          <button type="submit" className="btn btn--buy" disabled aria-disabled="true">{available ? "Add to cart" : "Sold out"}</button>
+        </div>
+        <p id={`${item.code}-note`} className="cell__source">The store's PayPal checkout was retired with the label in 2007; the button is here as it was, and does nothing.</p>
+      </form>
+    </div>
   );
 }
 

@@ -27,18 +27,22 @@ export function Page({ current, title, standfirst, children }: { current: string
           <p className="masthead__address"><strong>No Milk Records</strong><br />P.O. Box 1229 Jackson, NJ<br />08527 United States</p>
         </div>
         <nav className="nav" aria-label="Site">
-          {NAV.map((g) => (
-            <div className="nav__group" key={g.group}>
-              <p className="nav__head">{g.group}</p>
-              <ul>
-                {g.links.map(([href, label]) => (
-                  <li key={href}>
-                    {href.split("#")[0] === current ? <a href={`./${href}`} aria-current="page">{label}</a> : <a href={`./${href}`}>{label}</a>}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {NAV.map((g) => {
+            const here = g.links.some(([href]) => href.split("#")[0] === current);
+            return (
+              <details className={`nav__group${here ? " nav__group--here" : ""}`} key={g.group} open={here}>
+                <summary className="nav__head">{g.group}<span className="nav__count" aria-hidden="true">{g.links.length}</span></summary>
+                <ul>
+                  {g.links.map(([href, label]) => (
+                    <li key={href}>
+                      {href.split("#")[0] === current ? <a href={`./${href}`} aria-current="page">{label}</a> : <a href={`./${href}`}>{label}</a>}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            );
+          })}
+          <p className="nav__cart" aria-label="Cart, empty; the store's checkout is retired"><span className="nav__cartglyph" aria-hidden="true">▣</span> Cart · 0</p>
         </nav>
         <h1 className="masthead__title">{title}</h1>
         {standfirst && <p className="masthead__standfirst">{standfirst}</p>}
