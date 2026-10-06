@@ -1,0 +1,24 @@
+{
+  "name": "golden-grids-study-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Template for Golden Grids layout studies — a stacked-bands page that deploys to GitHub Pages.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gifcommit/golden-grids": "^5.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.3.0"
+  }
+}

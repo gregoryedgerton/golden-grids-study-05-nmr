@@ -1,0 +1,171 @@
+import { GoldenGrid, GoldenBox } from "@gifcommit/golden-grids";
+import type { PlacementValue } from "@gifcommit/golden-grids";
+import { useViewport, pick } from "./viewport";
+import { useExpandGroup, ExpandedCell } from "./expand";
+import { Fact } from "./boxes";
+import { Fit } from "./fit";
+import { Prose } from "./Prose";
+import { Band } from "../bands/Band";
+import { asset, bands, BAND_ORDER, store, audio, releases, brief, type Post, type Item, type Song, type Release } from "../data";
+
+/**
+ * The modules the original repeated in its side columns on every page:
+ * featured artists, featured items, top downloads, the newsletter, the
+ * radio players. Here they are bands of their own, placed where a page
+ * wants a break, as the site placed them beside everything.
+ */
+
+export function FeaturedArtistsBand({ except }: { except?: string }) {
+  const viewport = useViewport();
+  const roster = BAND_ORDER.filter((s) => s !== except);
+  const [to, placement] = pick<readonly [number, PlacementValue]>(viewport, { mobile: [4, "top"], tablet: [6, "left"], desktop: [6, "left"] });
+  return (
+    <Band id="featured-artists" title="Featured artists" lesson="The roster in 2007: No Hollywood Ending with a new record in stores, Lady Fantastic writing one, The Bank Robbers and Sleepaway on the road; Halifax and Socratic as alumni; All Rights Reserved, rest in peace." note={`from=1 to=${to} · placement="${placement}" · clockwise=true`}>
+      <GoldenGrid from={1} to={to} placement={placement}>
+        {roster.map((s) => {
+          const b = bands[s];
+          return (
+            <GoldenBox key={s}>
+              <a className="media" href={`./band-${s}.html`} aria-label={b.name}>
+                <img src={asset(b.photo)} alt={`${b.name}, promotional photograph`} loading="lazy" />
+                <p className="media__caption">{b.name}</p>
+              </a>
+            </GoldenBox>
+          );
+        })}
+      </GoldenGrid>
+    </Band>
+  );
+}
+
+export function FeaturedItemsBand({ items, title = "Featured items" }: { items?: Item[]; title?: string }) {
+  const viewport = useViewport();
+  const x = useExpandGroup();
+  const list = (items ?? store.filter((i) => i.image && i.price)).slice(0, 5);
+  const [to, placement] = pick<readonly [number, PlacementValue]>(viewport, { mobile: [3, "top"], tablet: [5, "bottom"], desktop: [5, "bottom"] });
+  return (
+    <Band id="featured-items" title={title} lesson="From the store: CDs, shirts, buttons and posters, most of them marked down for the summer sale. Orders took two to three weeks; the staff was small." note={`from=1 to=${to} · placement="${placement}" · clockwise=true`}>
+      <GoldenGrid from={1} to={to} placement={placement}>
+        {list.map((i) => <GoldenBox key={i.code} {...x.boxProps(i.code)}><ItemCard item={i} x={x} /></GoldenBox>)}
+      </GoldenGrid>
+    </Band>
+  );
+}
+
+/** The contents of a store item's square. Only a direct GoldenBox counts as
+ *  a GoldenGrid child, so these card components return the INSIDE of the
+ *  box and the band wraps each in <GoldenBox {...x.boxProps(key)}>. */
+export function ItemCard({ item, x }: { item: Item; x: ReturnType<typeof useExpandGroup> }) {
+  const key = item.code;
+  return (
+    <>
+      <figure className="media media--contain">
+        {item.image && <img src={asset(item.image)} alt={item.imageAlt || `${item.band} ${item.title}`} loading="lazy" />}
+        <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {item.band} {item.title}</span></button>
+        <figcaption className="media__caption">{item.price ? item.price.replace(" SALE!!!", "") : item.kind} · {item.band}</figcaption>
+      </figure>
+      {x.isOpen(key) && (
+        <ExpandedCell id={x.panelId(key)} title={`${item.band} · ${item.title}`} onClose={x.close} closeRef={x.closeRef}>
+          <div className="cell__body">
+            {item.price && <p><strong>{item.price}</strong>{item.sizes.length ? ` · sizes: ${item.sizes.join(", ")}` : ""}</p>}
+            {item.description.map((p, i) => <p key={i}>{p}</p>)}
+            <p className="cell__source">Catalogue {item.code}. The store took PayPal; it is not connected here.</p>
+          </div>
+        </ExpandedCell>
+      )}
+    </>
+  );
+}
+
+export function SongCard({ song, label }: { song: Song; label?: string }) {
+  return (
+    <div className="box">
+      <p className="box__label">{label ?? song.band}</p>
+      <div className="box__fit"><Fit as="p" max={120}>{song.song}</Fit></div>
+      <audio className="box__audio" controls preload="none" src={asset(song.file)} aria-label={`${song.band}, ${song.song}`} />
+    </div>
+  );
+}
+
+export function DownloadsBand({ songs, title = "Top downloads", lesson }: { songs?: Song[]; title?: string; lesson?: string }) {
+  const viewport = useViewport();
+  const list = (songs ?? audio).slice(0, 4);
+  const [to, placement] = pick<readonly [number, PlacementValue]>(viewport, { mobile: [3, "bottom"], tablet: [4, "right"], desktop: [4, "right"] });
+  return (
+    <Band id="downloads" title={title} lesson={lesson ?? "MP3s the label gave away: a song or two from each record. Right-click and save, the page said; here they play."} note={`from=1 to=${to} · placement="${placement}" · clockwise=true · <audio> in each square`}>
+      <GoldenGrid from={1} to={to} placement={placement}>
+        {list.map((s) => <GoldenBox key={s.file}><SongCard song={s} /></GoldenBox>)}
+      </GoldenGrid>
+    </Band>
+  );
+}
+
+export function NewsletterBand() {
+  const viewport = useViewport();
+  const single = viewport === "mobile";
+  // The form needs the room at 820, where a unit square is 257px; at 1440
+  // the type takes the hero and the form has 453px in the square beside it.
+  const typeHero = viewport === "desktop";
+  return (
+    <Band id="newsletter" title="NMR newsletter" lesson="Name and email, for news on shows and releases; the original went to a mailing list run from the label's office. Nothing is sent from here." note={`from=1 to=${single ? 1 : 3} · placement="bottom" · clockwise=false · type fills the hero`}>
+      <GoldenGrid from={1} to={single ? 1 : 3} placement="bottom" clockwise={false}>
+        {!single && typeHero && <GoldenBox><Fact label="No Milk Records" tone="ink">{"Hype,\ngossip,\nshows"}</Fact></GoldenBox>}
+        <GoldenBox>
+          <div className="box">
+            <p className="box__label">Sign up</p>
+            <form className="form" onSubmit={(e) => e.preventDefault()}>
+              <label htmlFor="nl-name">Name</label><input id="nl-name" name="name" autoComplete="off" />
+              <label htmlFor="nl-email">E-mail</label><input id="nl-email" name="email" type="email" autoComplete="off" />
+              <button className="btn" type="submit">Subscribe</button>
+              <p className="box__source">A demonstration; nothing is sent.</p>
+            </form>
+          </div>
+        </GoldenBox>
+        {!single && !typeHero && <GoldenBox><Fact label="No Milk Records" tone="ink">{"Hype,\ngossip,\nshows"}</Fact></GoldenBox>}
+        <GoldenBox>
+          <Fact label="Since 2005" fitClass="fit--light">{"Jackson,\nNew Jersey"}</Fact>
+        </GoldenBox>
+      </GoldenGrid>
+    </Band>
+  );
+}
+
+/** A news post as a card: date, the title fitted, the first lines, More for the rest. */
+export function PostCard({ post, x, k }: { post: Post; x: ReturnType<typeof useExpandGroup>; k: string }) {
+  const first = post.html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return (
+    <>
+      <Fact
+        label={post.date}
+        body={<><p className="box__body--short">{brief(first, 140)}</p><p className="box__body--long">{brief(first, 380)}</p></>}
+        source={post.by ? `posted by ${post.by}` : undefined}
+        expand={{ group: x, slotKey: k, title: `${post.date} · ${post.title}`, full: <Prose className="cell__body" html={post.html} />, source: post.by ? `Posted by ${post.by}.` : undefined }}
+      >
+        {post.title}
+      </Fact>
+    </>
+  );
+}
+
+export function ReleaseCard({ r, x }: { r: Release; x: ReturnType<typeof useExpandGroup> }) {
+  const key = r.catalog;
+  return (
+    <>
+      <figure className="media media--contain" id={key.toLowerCase()}>
+        {r.cover && <img src={asset(r.cover)} alt={r.coverAlt} loading="lazy" />}
+        <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {r.band}, {r.title}</span></button>
+        <figcaption className="media__caption">{r.catalog} · {r.band}</figcaption>
+      </figure>
+      {x.isOpen(key) && (
+        <ExpandedCell id={x.panelId(key)} title={`${r.catalog} · ${r.band} · ${r.title}`} onClose={x.close} closeRef={x.closeRef}>
+          <div className="cell__body">
+            {r.facts.map((f) => <p key={f}><strong>{f}</strong></p>)}
+            {r.description.map((p, i) => <p key={i}>{p}</p>)}
+          </div>
+        </ExpandedCell>
+      )}
+    </>
+  );
+}
+
+export const releasesOf = (bandName: string) => releases.filter((r) => r.band.toLowerCase() === bandName.toLowerCase());

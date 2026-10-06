@@ -1,0 +1,162 @@
+/* Study 05 — No Milk Records. The register is the 2005 site's own, from its
+   low_style.css: a tiled grey damask behind a boxed page, panels of #edebe8
+   and #f5f4f2 on a #c1bcb7 ground, 1px #38342c borders, Arial at 12px, and
+   section titles in lowercase bold caps-feel. Here the boxes are golden
+   grids and the type fits them; the pattern, the colours and the 1px rule
+   are kept. Nothing is matched to a type the site did not use. */
+
+:root {
+  color-scheme: light dark;
+  --paper: #c1bcb7;        /* the container ground */
+  --panel: #edebe8;        /* a box */
+  --panel-2: #f5f4f2;      /* a brighter box */
+  --ink: #38342c;          /* text and rules */
+  --ink-soft: #4f4a40;     /* body text */
+  --muted: #6a6358;
+  --accent: #aa9f90;       /* the site's link grey, lifted for contrast where it is text */
+  --label: #6e665a;        /* small caps labels: passes on both panels */
+  --red: #b0231f;          /* the logo's red, used sparingly */
+  --font: Arial, Helvetica, sans-serif;
+  --measure: 60ch;
+  --pattern: url("/nmr/site/images/pattern.gif");
+  /* The tools panel and expand helper read these. */
+  --bg: var(--panel-2); --fg: var(--ink); --line: var(--ink); --card: var(--panel); --btn: var(--panel-2); --line-light: var(--panel-2);
+  --tag-bg: var(--ink); --tag-fg: var(--panel-2);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #26231f;
+    --panel: #2f2b26;
+    --panel-2: #39342e;
+    --ink: #ece7df;
+    --ink-soft: #d6cfc4;
+    --muted: #b4ac9f;
+    --accent: #c8bdae;
+    --label: #c2b59f;
+    --red: #e05a52;
+  }
+}
+/* The site has one scheme, light; dark is the study's, the same greys turned
+   over under the same pattern. */
+
+* { box-sizing: border-box; }
+html { background: var(--paper) var(--pattern) repeat; color: var(--ink-soft); }
+@media (prefers-color-scheme: dark) { html { background-blend-mode: multiply; background-color: #1a1815; } }
+body { margin: 0; font: 15px/1.55 var(--font); }
+a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+.skip { position: absolute; left: 0; top: 0; padding: 0.5rem 1rem; background: var(--ink); color: var(--panel-2); transform: translateY(-120%); z-index: 3; }
+.skip:focus { transform: none; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* --- The boxed page -------------------------------------------------------- */
+.masthead, .band, .colophon, .list-band {
+  width: min(100% - 24px, 1200px);
+  margin-inline: auto;
+}
+.masthead { margin-top: 24px; background: var(--panel); border: 1px solid var(--ink); padding: 12px 16px 16px; }
+.masthead__row { display: flex; align-items: center; gap: 12px; padding-right: 80px; }
+.masthead__logo img { display: block; }
+.masthead__address { margin: 0; font-size: 13px; line-height: 1.35; color: var(--ink-soft); }
+.masthead__address strong { font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink); }
+.nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--ink); }
+.nav__head { margin: 0 0 4px; font: 700 12px/1.3 var(--font); letter-spacing: 0.12em; text-transform: uppercase; color: var(--label); }
+.nav ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 14px; }
+.nav a { text-decoration: none; display: inline-block; padding: 4px 0; min-height: 24px; }
+.nav a:hover { text-decoration: underline; }
+.nav [aria-current] { font-weight: 700; border-bottom: 2px solid var(--red); }
+.masthead__title { margin: 14px 0 0; font: 700 clamp(1.8rem, 4.5vw, 3.2rem)/1 var(--font); letter-spacing: -0.02em; text-transform: lowercase; color: var(--ink); }
+.masthead__standfirst { max-width: var(--measure); margin: 8px 0 0; color: var(--ink-soft); font-size: 17px; line-height: 1.5; }
+
+/* --- Bands ------------------------------------------------------------------ */
+.band { margin-top: 12px; background: var(--panel); border: 1px solid var(--ink); padding: 12px 16px 16px; }
+.band__header { margin-bottom: 10px; }
+.band__title { margin: 0 0 6px; font: 700 15px/1.3 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); padding-bottom: 6px; border-bottom: 1px solid var(--ink); }
+.band__lesson { max-width: var(--measure); margin: 0 0 6px; font-size: 16px; line-height: 1.5; color: var(--ink-soft); }
+.band__note { margin: 0; font: 12px/1.4 ui-monospace, monospace; color: var(--muted); }
+.band__wrap { width: 100%; }
+
+/* --- Boxes ------------------------------------------------------------------ */
+.box {
+  position: absolute; inset: 3px;
+  display: flex; flex-direction: column;
+  padding: clamp(4px, 7%, 28px);
+  overflow: hidden;
+  container-type: size;
+  background: var(--panel-2); border: 1px solid var(--ink);
+}
+.box--ink { background: var(--ink); color: var(--panel-2); }
+.box--ink .box__label, .box--ink .box__source, .box--ink a, .box--ink .more { color: inherit; }
+.box--ink :focus-visible { outline-color: var(--panel-2); }
+.box__label { margin: 0 0 0.4em; font: 700 clamp(0.7rem, 4cqmin, 0.95rem)/1.3 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--label); overflow-wrap: anywhere; }
+.box__fit { flex: 1 1 0; min-height: 34%; position: relative; display: flex; align-items: center; overflow: hidden; }
+.box__fit--top { align-items: flex-start; }
+.fit { display: block; margin: 0; font-weight: 700; line-height: 1; letter-spacing: -0.02em; white-space: pre-line; text-wrap: balance; transition: none !important; color: var(--ink); }
+.box--ink .fit { color: inherit; }
+.fit--num { white-space: pre; text-wrap: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+.fit--light { font-weight: 400; }
+.box__body { margin: 0.5em 0 0; font-size: clamp(0.9rem, 5cqmin, 1.2rem); line-height: 1.45; max-width: var(--measure); flex: 0 0 auto; color: var(--ink-soft); }
+.box__body p { margin: 0 0 0.5em; } .box__body p:last-child { margin-bottom: 0; }
+.box__foot { margin-top: auto; padding-top: 0.5em; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.3em 1em; align-items: baseline; font-size: clamp(0.7rem, 4cqmin, 0.95rem); }
+.box__source { color: var(--muted); overflow-wrap: anywhere; min-width: 0; }
+.more { min-height: 24px; font: 700 1em/1 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); background: transparent; border: 0; padding: 0.3em 0; cursor: pointer; border-bottom: 2px solid var(--red); }
+.more--link { text-decoration: none; }
+.box__foot .more + .more { margin-left: 1em; }
+.box--figure { padding: clamp(4px, 3cqmin, 20px); }
+.box--figure svg, .box--figure img { flex: 1 1 0; min-height: 0; height: auto !important; width: 100%; object-fit: contain; }
+.box--figure .box__caption { margin: 0.4em 0 0; font-size: clamp(0.85rem, 4cqmin, 1.05rem); line-height: 1.3; color: var(--ink-soft); }
+a.box { text-decoration: none; color: inherit; }
+.box__arrow { color: var(--label); font-size: clamp(0.7rem, 4cqmin, 0.95rem); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+@container (max-height: 200px) { .box__body { display: none; } }
+/* Two lengths of body copy: the short one in a middling square, the long one
+   where there is room for it. Whole sentences either way, never a cut. */
+@container (max-height: 440px) { .box__body--long { display: none; } }
+@container (min-height: 440.1px) { .box__body--short { display: none; } }
+@container (max-width: 110px) or (max-height: 90px) { .box__body, .box__caption, .box__foot, .box__source { display: none; } }
+@container (max-width: 64px) or (max-height: 64px) { .box__label { display: none; } }
+
+/* Media in a square: the site's 1px #4f4a40 border on every image. */
+.media { margin: 0; position: absolute; inset: 3px; overflow: hidden; background: var(--panel-2); border: 1px solid var(--ink-soft); container-type: size; }
+.media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.media--contain img { object-fit: contain; background: var(--panel-2); }
+.media__caption { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 6px 10px; background: color-mix(in srgb, var(--ink) 85%, transparent); color: var(--panel-2); font: 700 clamp(11px, 5cqmin, 15px)/1.3 var(--font); letter-spacing: 0.06em; text-transform: uppercase; }
+@container (max-width: 90px) { .media__caption { display: none; } }
+.media__open { position: absolute; inset: 0; border: 0; background: transparent; padding: 0; cursor: zoom-in; }
+.media__open:focus-visible { outline: 3px solid var(--red); outline-offset: -3px; }
+
+/* Audio in a square: the player sits at the foot of the song's box. */
+.box__audio { width: 100%; margin-top: auto; flex: 0 0 auto; height: 32px; }
+@container (max-width: 160px) { .box__audio { display: none; } }
+
+/* --- Expanded cell, prose from the crawl -------------------------------------- */
+.cell { padding: 14px 16px; background: var(--panel-2); border: 1px solid var(--ink); }
+.cell__title { font: 700 16px/1.3 var(--font); letter-spacing: 0.08em; text-transform: uppercase; }
+.cell__body { max-width: var(--measure); font-size: 16px; line-height: 1.55; color: var(--ink-soft); }
+.cell__source { font-size: 14px; color: var(--label); }
+.prose p { margin: 0 0 0.75em; } .prose p:last-child { margin: 0; }
+.prose img { max-width: 100%; height: auto; border: 1px solid var(--ink-soft); }
+.prose .prose__h { font: 700 15px/1.3 var(--font); letter-spacing: 0.06em; text-transform: uppercase; margin: 0.75em 0 0.25em; color: var(--ink); }
+.prose .prose__sub { font: 400 15px/1.4 var(--font); margin: 0 0 0.25em; color: var(--muted); }
+.prose table { border-collapse: collapse; } .prose td, .prose th { padding: 4px; vertical-align: top; }
+.prose ul, .prose ol { padding-left: 1.2em; }
+
+/* --- Flat content stays a list ------------------------------------------------- */
+.list-band { margin-top: 12px; background: var(--panel); border: 1px solid var(--ink); padding: 12px 16px 16px; }
+.list { margin: 0; padding: 0; list-style: none; display: grid; gap: 1px; background: var(--ink); border: 1px solid var(--ink); }
+.list > li { background: var(--panel-2); padding: 12px 14px; }
+.list__head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: 16px; }
+.list__head time, .list__head .list__k { font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 13px; color: var(--label); }
+.list details summary { cursor: pointer; font-weight: 700; color: var(--ink); }
+.list details[open] summary { margin-bottom: 8px; }
+.list .prose { font-size: 15px; }
+.rows { display: grid; gap: 8px; }
+.form { display: grid; gap: 8px; max-width: 420px; }
+.form label { font: 700 13px/1.3 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--label); }
+.form input { font: inherit; padding: 8px 10px; border: 1px solid var(--ink); background: var(--panel-2); color: var(--ink); min-height: 40px; }
+.btn { font: 700 14px/1 var(--font); letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 16px; min-height: 40px; background: var(--ink); color: var(--panel-2); border: 0; cursor: pointer; }
+
+.colophon { margin: 12px auto 40px; background: var(--panel); border: 1px solid var(--ink); padding: 12px 16px; font-size: 14px; color: var(--ink-soft); }
+.colophon p { margin: 0; max-width: 80ch; }

@@ -1,0 +1,1077 @@
+{
+ "tiles": [],
+ "url": "https://nmr.gifcommit.com/tours.shtml",
+ "title": "[ NO MILK RECORDS | TOURS ] select artist upcoming shows concerts festivals",
+ "width": 1440,
+ "height": 2955,
+ "headings": [
+  {
+   "tag": "H1",
+   "text": "NMR NEWSLETTER",
+   "x": 373,
+   "y": 125,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NMR RADIO PLAYERS",
+   "x": 373,
+   "y": 229,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "FEATURED ITEMS",
+   "x": 373,
+   "y": 643,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "TOP DOWNLOADS",
+   "x": 373,
+   "y": 1085,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "BANDS ON TOUR",
+   "x": 562,
+   "y": 125,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "CURRENT SHOWS",
+   "x": 562,
+   "y": 200,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.13.2006",
+   "x": 562,
+   "y": 228,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "San Francisco, CA @ The Filmore",
+   "x": 562,
+   "y": 242,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.16.2006",
+   "x": 562,
+   "y": 281,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Kennewick, WA @ 321 Kennewick 7:30PM ALL AGES!",
+   "x": 562,
+   "y": 295,
+   "w": 292,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "9.17.2006",
+   "x": 562,
+   "y": 348,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Lawrence, KS @ Liberty Hall",
+   "x": 562,
+   "y": 362,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.18.2006",
+   "x": 562,
+   "y": 401,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Minneapolis, MN @ The Quest",
+   "x": 562,
+   "y": 415,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.20.2006",
+   "x": 562,
+   "y": 454,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Chicago, IL @ House of Blues",
+   "x": 562,
+   "y": 468,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.21.2006",
+   "x": 562,
+   "y": 507,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Millvale, PA @ Mr. Smalls Theater",
+   "x": 562,
+   "y": 521,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.22.06",
+   "x": 562,
+   "y": 560,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Youngstown, OH @ The Cedars 8PM $5",
+   "x": 562,
+   "y": 574,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.22.2006",
+   "x": 562,
+   "y": 613,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Farmington Hills, MI @ Clutch Cargos",
+   "x": 562,
+   "y": 627,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.23.2006",
+   "x": 562,
+   "y": 666,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Seattle, WA @ Sunset Tavern 6PM ALL AGES!",
+   "x": 562,
+   "y": 680,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.23.2006",
+   "x": 562,
+   "y": 708,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Buffalo, NY @ Buffalo Icon",
+   "x": 562,
+   "y": 722,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.24.2006",
+   "x": 562,
+   "y": 761,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Allentown, PA @ Crocodile Rock",
+   "x": 562,
+   "y": 775,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.24.06",
+   "x": 562,
+   "y": 814,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "South Hackensack, NJ @ School of Rock 6PM",
+   "x": 562,
+   "y": 828,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.25.2006",
+   "x": 562,
+   "y": 867,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Boston, MA @ Avalon Ballroom",
+   "x": 562,
+   "y": 881,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.26.2006",
+   "x": 562,
+   "y": 920,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Seattle, WA @ Chop Suey 9PM 21+!",
+   "x": 562,
+   "y": 934,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.26.2006",
+   "x": 562,
+   "y": 962,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Hartford, CT @ Webster Theater",
+   "x": 562,
+   "y": 976,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.28.2006",
+   "x": 562,
+   "y": 1015,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Philadelphia, PA @ The TLA",
+   "x": 562,
+   "y": 1029,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.29.2006",
+   "x": 562,
+   "y": 1068,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Sayreville, NJ @ Starland Ballroom",
+   "x": 562,
+   "y": 1082,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.29.2006",
+   "x": 562,
+   "y": 1121,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Fall River, MA @ 486 Bedford St. 6PM",
+   "x": 562,
+   "y": 1135,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.29.2006",
+   "x": 562,
+   "y": 1174,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Bellingham, WA @ Fantasia Expresso 7PM ALL AGES!",
+   "x": 562,
+   "y": 1188,
+   "w": 292,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "9.30.2006",
+   "x": 562,
+   "y": 1241,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Edmonds, WA @ The Halcyon 7PM ALL AGES!",
+   "x": 562,
+   "y": 1255,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.30.2006",
+   "x": 562,
+   "y": 1294,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Asbury Park, NJ @ The Stone Pony 12NOON",
+   "x": 562,
+   "y": 1308,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.30.2006",
+   "x": 562,
+   "y": 1347,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "New York, NY @ Webster Hall",
+   "x": 562,
+   "y": 1361,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "9.30.2006",
+   "x": 562,
+   "y": 1400,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "South Hackensack, NJ @ School of Rock 7PM $10",
+   "x": 562,
+   "y": 1414,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.1.2006",
+   "x": 562,
+   "y": 1453,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Baltimore, MD @ Sonar",
+   "x": 562,
+   "y": 1467,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.3.2006",
+   "x": 562,
+   "y": 1506,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Atlanta, GA @ The Masquerade",
+   "x": 562,
+   "y": 1520,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.4.2006",
+   "x": 562,
+   "y": 1559,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Memphis, TN @ New Daisy Theater",
+   "x": 562,
+   "y": 1573,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.5.2006",
+   "x": 562,
+   "y": 1612,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Houston, TX @ Warehouse Live",
+   "x": 562,
+   "y": 1626,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.6.2006",
+   "x": 562,
+   "y": 1665,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Olmos Park, TX @ White Rabbit",
+   "x": 562,
+   "y": 1679,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.6.06",
+   "x": 562,
+   "y": 1718,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Philadelphia, PA @ The Boiler Room 6PM",
+   "x": 562,
+   "y": 1732,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.7.06",
+   "x": 562,
+   "y": 1771,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Poughkeepsie, NY @ The Chance 12NOON",
+   "x": 562,
+   "y": 1785,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.7.2006",
+   "x": 562,
+   "y": 1835,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Dallas, TX @ The Door",
+   "x": 562,
+   "y": 1849,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.9.2006",
+   "x": 562,
+   "y": 1888,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Alberquerque, NM @ Sunshine Theater",
+   "x": 562,
+   "y": 1902,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.10.2006",
+   "x": 562,
+   "y": 1941,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Phoenix, AZ @ Marquee Theater",
+   "x": 562,
+   "y": 1955,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.10.06",
+   "x": 562,
+   "y": 1994,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Bound Brook, NJ @ Hamilton St. Cafe 6PM",
+   "x": 562,
+   "y": 2008,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.11.06",
+   "x": 562,
+   "y": 2047,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Millvale, PA @ Mr. Smalls Theater 7:30PM $10",
+   "x": 562,
+   "y": 2061,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.12.2006",
+   "x": 562,
+   "y": 2100,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Seattle, WA @ Homeroom (Hugo House) 8PM ALL AGES!",
+   "x": 562,
+   "y": 2114,
+   "w": 292,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "10.13.06",
+   "x": 562,
+   "y": 2167,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Flossmoor, IL @ Calvary Church 6PM",
+   "x": 562,
+   "y": 2181,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.14.06",
+   "x": 562,
+   "y": 2220,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Kent, OH @ The Robinhood 8PM",
+   "x": 562,
+   "y": 2234,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.14.06",
+   "x": 562,
+   "y": 2273,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Lansing, MI @ Immanuel Community Church 6PM",
+   "x": 562,
+   "y": 2287,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.14.2006",
+   "x": 562,
+   "y": 2326,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Pomona, CA @ BAMBOOZLE LEFT",
+   "x": 562,
+   "y": 2340,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.19.06",
+   "x": 562,
+   "y": 2368,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Fort Walton Beach, FL @ Club Fuzion 8PM",
+   "x": 562,
+   "y": 2382,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.20.06",
+   "x": 562,
+   "y": 2421,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "West Palm Beach, FL @ Ray’s Downtown 6PM",
+   "x": 562,
+   "y": 2435,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.21.06",
+   "x": 562,
+   "y": 2474,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Pembroke Pines, FL @ The Talent Farm 7PM",
+   "x": 562,
+   "y": 2488,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.21.2006",
+   "x": 562,
+   "y": 2527,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Salem, OR @ Ikebox 7PM ALL AGES!",
+   "x": 562,
+   "y": 2541,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "10.22.06",
+   "x": 562,
+   "y": 2580,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Daytona Beach, FL @ Seabreeze Coffee Connection 7PM",
+   "x": 562,
+   "y": 2594,
+   "w": 292,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "10.26.2006",
+   "x": 562,
+   "y": 2647,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Franklinville, NJ @ Franklinville Skating Center 6PM",
+   "x": 562,
+   "y": 2661,
+   "w": 292,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "11.11.2006",
+   "x": 562,
+   "y": 2714,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Seattle, WA @ Vera Project 7PM ALL AGES!",
+   "x": 562,
+   "y": 2728,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "12.8.06",
+   "x": 562,
+   "y": 2767,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Youngstown. OH @ The Nyabinghi 8PM",
+   "x": 562,
+   "y": 2781,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "BANDS ON TOUR",
+   "x": 562,
+   "y": 2834,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "FEATURED ARTISTS",
+   "x": 871,
+   "y": 125,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 871,
+   "y": 153,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "LADY FANTASTIC",
+   "x": 871,
+   "y": 477,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 871,
+   "y": 662,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 871,
+   "y": 815,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALUMNI ARTISTS",
+   "x": 871,
+   "y": 968,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 871,
+   "y": 996,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SOCRATIC",
+   "x": 871,
+   "y": 1181,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "PODCAST EPISODES",
+   "x": 871,
+   "y": 1334,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "REST IN PEACE",
+   "x": 871,
+   "y": 1453,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 871,
+   "y": 1481,
+   "w": 196,
+   "h": 14
+  }
+ ],
+ "images": [
+  {
+   "alt": "",
+   "x": 369,
+   "y": 49,
+   "w": 73,
+   "h": 38
+  },
+  {
+   "alt": "No Hollywood Ending - Everybody's Talkin",
+   "x": 603,
+   "y": 49,
+   "w": 468,
+   "h": 60
+  },
+  {
+   "alt": "vol6 cover",
+   "x": 369,
+   "y": 300,
+   "w": 180,
+   "h": 180
+  },
+  {
+   "alt": "",
+   "x": 369,
+   "y": 532,
+   "w": 180,
+   "h": 49
+  },
+  {
+   "alt": "",
+   "x": 369,
+   "y": 586,
+   "w": 180,
+   "h": 49
+  },
+  {
+   "alt": "No Hollywood Ending, EVerybody's Talking",
+   "x": 373,
+   "y": 671,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Milk Records, Black Logo Zip-Up Hoodi",
+   "x": 373,
+   "y": 740,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Milk Records, White Logo Zip-Up Hoodi",
+   "x": 373,
+   "y": 809,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Sleepaway CD/LP",
+   "x": 373,
+   "y": 878,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "The Bank Robbers, Tomorrow Belongs To Me",
+   "x": 373,
+   "y": 947,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Hollywood Ending, Bones T-Shirt",
+   "x": 373,
+   "y": 1016,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, Fuckin Buddy Icon",
+   "x": 373,
+   "y": 1323,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Band Buddy Icon",
+   "x": 373,
+   "y": 1392,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "The Bank Robbers, Evolution Buddy Icon",
+   "x": 373,
+   "y": 1461,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Hollywood Ending Picture",
+   "x": 871,
+   "y": 167,
+   "w": 194,
+   "h": 274
+  },
+  {
+   "alt": "Lady Fantastic Picture",
+   "x": 871,
+   "y": 491,
+   "w": 194,
+   "h": 146
+  },
+  {
+   "alt": "The Bank Robbers Picture",
+   "x": 871,
+   "y": 676,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Sleepaway Picture",
+   "x": 871,
+   "y": 829,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Halifax Picture",
+   "x": 871,
+   "y": 1010,
+   "w": 194,
+   "h": 146
+  },
+  {
+   "alt": "Socratic Picture",
+   "x": 871,
+   "y": 1195,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Late Night Office HOurs With Edgemin & K",
+   "x": 871,
+   "y": 1362,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "All Rights Reserved Picture",
+   "x": 871,
+   "y": 1495,
+   "w": 194,
+   "h": 114
+  }
+ ]
+}

@@ -1,0 +1,893 @@
+{
+ "tiles": [],
+ "url": "https://nmr.gifcommit.com/store.shtml",
+ "title": "[ NO MILK RECORDS | STORE ] online store for CDs, t-shirts, zip-up hoodies, trucker hats, buttons, posters",
+ "width": 1440,
+ "height": 2039,
+ "headings": [
+  {
+   "tag": "H1",
+   "text": "BROWSE BY ARTIST",
+   "x": 373,
+   "y": 125,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "BROWSE BY CATEGORY",
+   "x": 373,
+   "y": 185,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "STORE POLICY",
+   "x": 373,
+   "y": 282,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Please Read The Following",
+   "x": 373,
+   "y": 310,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "WELCOME TO THE OFFICIAL STORE OF NO MILK REOCRDS",
+   "x": 562,
+   "y": 125,
+   "w": 505,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NEW ITEMS",
+   "x": 562,
+   "y": 153,
+   "w": 505,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 571,
+   "y": 297,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Everybody's Talking\" CD/LP NEW!!",
+   "x": 571,
+   "y": 325,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 696,
+   "y": 297,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Sleepaway\" CD/LP",
+   "x": 696,
+   "y": 311,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 821,
+   "y": 297,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Sleepaway\" Double Pin Set",
+   "x": 821,
+   "y": 311,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 946,
+   "y": 297,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Tomorrow Belongs To Me\" CD/LP",
+   "x": 946,
+   "y": 325,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 571,
+   "y": 503,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Tomorrow Belongs To Me\" Double Pin Set",
+   "x": 571,
+   "y": 531,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "NO MILK RECORDS",
+   "x": 696,
+   "y": 503,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "Black \"Logo\" Zip-Up Hoodie",
+   "x": 696,
+   "y": 531,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "NO MILK RECORDS",
+   "x": 821,
+   "y": 503,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "White \"Logo\" Zip-Up Hoodie",
+   "x": 821,
+   "y": 531,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 946,
+   "y": 503,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Bones\" T-Shirt",
+   "x": 946,
+   "y": 531,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SPECIAL SALES!!!",
+   "x": 562,
+   "y": 607,
+   "w": 505,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 571,
+   "y": 751,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Crows\" T-Shirt",
+   "x": 571,
+   "y": 779,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 696,
+   "y": 751,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Robot\" T-Shirt",
+   "x": 696,
+   "y": 779,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 821,
+   "y": 751,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Blood\" T-Shirt",
+   "x": 821,
+   "y": 765,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 946,
+   "y": 751,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Tiger\" T-Shirt",
+   "x": 946,
+   "y": 765,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 571,
+   "y": 929,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Porno\" T-Shirt",
+   "x": 571,
+   "y": 957,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO MILK RECORDS",
+   "x": 696,
+   "y": 929,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Skulls\" T-Shirt",
+   "x": 696,
+   "y": 957,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 821,
+   "y": 929,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Camp\" T-Shirt",
+   "x": 821,
+   "y": 943,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SOCRATIC",
+   "x": 946,
+   "y": 929,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Diamonds\" T-Shirt",
+   "x": 946,
+   "y": 943,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "TOURMALINE",
+   "x": 571,
+   "y": 1107,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Mannequin\" T-Shirt",
+   "x": 571,
+   "y": 1121,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "TOURMALINE",
+   "x": 696,
+   "y": 1107,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Cover\" T-Shirt",
+   "x": 696,
+   "y": 1121,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 821,
+   "y": 1107,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Remind Me To Burn These Pages\" Poster",
+   "x": 821,
+   "y": 1135,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 946,
+   "y": 1107,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"It's All A Nightmare\" Poster",
+   "x": 946,
+   "y": 1135,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "NO MILK RECORDS",
+   "x": 571,
+   "y": 1313,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Sword\" Poster",
+   "x": 571,
+   "y": 1341,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SOCRATIC",
+   "x": 696,
+   "y": 1313,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"It's Getting Late\" Poster",
+   "x": 696,
+   "y": 1327,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 821,
+   "y": 1313,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"The Pattern Reversed\" Poster",
+   "x": 821,
+   "y": 1341,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "TOURMALINE",
+   "x": 946,
+   "y": 1313,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Strage Distress Calls\" Poster",
+   "x": 946,
+   "y": 1327,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "TOURMALINE",
+   "x": 571,
+   "y": 1505,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Limited Edition \"Strage Distress Calls\" Poster",
+   "x": 571,
+   "y": 1519,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "NO MILK RECORDS",
+   "x": 696,
+   "y": 1505,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Skulls\" Hat",
+   "x": 696,
+   "y": 1533,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 821,
+   "y": 1505,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Remind Me To Burn These Pages\" CD/EP",
+   "x": 821,
+   "y": 1533,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "TOURMALINE",
+   "x": 946,
+   "y": 1505,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Cover\" Pin Set",
+   "x": 946,
+   "y": 1519,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "TOURMALINE",
+   "x": 571,
+   "y": 1711,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Strange Distress Calls\" CD/LP",
+   "x": 571,
+   "y": 1725,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 696,
+   "y": 1711,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Sleepaway\" Double Pin Set",
+   "x": 696,
+   "y": 1725,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 821,
+   "y": 1711,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Tomorrow Belongs To Me\" Double Pin Set",
+   "x": 821,
+   "y": 1739,
+   "w": 107,
+   "h": 42
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 946,
+   "y": 1711,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Original\" Pin Set",
+   "x": 946,
+   "y": 1739,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 571,
+   "y": 1917,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Cover\" Pin Set",
+   "x": 571,
+   "y": 1945,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 696,
+   "y": 1917,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Original\" Pin Set",
+   "x": 696,
+   "y": 1931,
+   "w": 107,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO MILK RECORDS",
+   "x": 821,
+   "y": 1917,
+   "w": 107,
+   "h": 28
+  },
+  {
+   "tag": "H1",
+   "text": "\"Skull\" Pin Set",
+   "x": 821,
+   "y": 1945,
+   "w": 107,
+   "h": 14
+  }
+ ],
+ "images": [
+  {
+   "alt": "",
+   "x": 369,
+   "y": 49,
+   "w": 73,
+   "h": 38
+  },
+  {
+   "alt": "No Hollywood Ending - Everybody's Talkin",
+   "x": 603,
+   "y": 49,
+   "w": 468,
+   "h": 60
+  },
+  {
+   "alt": "",
+   "x": 373,
+   "y": 245,
+   "w": 131,
+   "h": 23
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 190,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 190,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 190,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 190,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 396,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 396,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 396,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 396,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 644,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 644,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 644,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 644,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 822,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 822,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 822,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 822,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 1000,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 1000,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 1000,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 1000,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 1206,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 1206,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 1206,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 1206,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 1398,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 1398,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 1398,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 1398,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 1604,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 1604,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 1604,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 946,
+   "y": 1604,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 571,
+   "y": 1810,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 696,
+   "y": 1810,
+   "w": 107,
+   "h": 107
+  },
+  {
+   "alt": "",
+   "x": 821,
+   "y": 1810,
+   "w": 107,
+   "h": 107
+  }
+ ]
+}

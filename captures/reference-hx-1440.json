@@ -1,0 +1,295 @@
+{
+ "tiles": [],
+ "url": "https://nmr.gifcommit.com/hx.shtml",
+ "title": "[ NO MILK RECORDS | HALIFAX ] A Writer's Reference, Thousand Oaks, CA",
+ "width": 1440,
+ "height": 4293,
+ "headings": [
+  {
+   "tag": "H1",
+   "text": "NMR NEWSLETTER",
+   "x": 373,
+   "y": 125,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NMR RADIO PLAYERS",
+   "x": 373,
+   "y": 229,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "FEATURED ITEMS",
+   "x": 373,
+   "y": 643,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "TOP DOWNLOADS",
+   "x": 377,
+   "y": 835,
+   "w": 164,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 373,
+   "y": 1275,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "BIO",
+   "x": 373,
+   "y": 1605,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "RELATED LINKS",
+   "x": 373,
+   "y": 2666,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "FEATURED ARTISTS",
+   "x": 382,
+   "y": 2763,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 382,
+   "y": 2791,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "LADY FANTASTIC",
+   "x": 382,
+   "y": 3115,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 382,
+   "y": 3300,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 382,
+   "y": 3453,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALUMNI ARTISTS",
+   "x": 382,
+   "y": 3606,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 382,
+   "y": 3634,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SOCRATIC",
+   "x": 382,
+   "y": 3819,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "PODCAST EPISODES",
+   "x": 382,
+   "y": 3972,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "REST IN PEACE",
+   "x": 382,
+   "y": 4091,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 382,
+   "y": 4119,
+   "w": 196,
+   "h": 14
+  }
+ ],
+ "images": [
+  {
+   "alt": "",
+   "x": 369,
+   "y": 49,
+   "w": 73,
+   "h": 38
+  },
+  {
+   "alt": "No Hollywood Ending - Everybody's Talkin",
+   "x": 603,
+   "y": 49,
+   "w": 468,
+   "h": 60
+  },
+  {
+   "alt": "vol6 cover",
+   "x": 369,
+   "y": 300,
+   "w": 180,
+   "h": 180
+  },
+  {
+   "alt": "",
+   "x": 369,
+   "y": 532,
+   "w": 180,
+   "h": 49
+  },
+  {
+   "alt": "",
+   "x": 369,
+   "y": 586,
+   "w": 180,
+   "h": 49
+  },
+  {
+   "alt": "Halifax, A Writer's Reference CD/EP",
+   "x": 373,
+   "y": 671,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, Blood T-Shirt",
+   "x": 373,
+   "y": 740,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, Tiger T-Shrt",
+   "x": 373,
+   "y": 809,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, Logo Wallpaper",
+   "x": 377,
+   "y": 1081,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, Fuckin Buddy Icon",
+   "x": 377,
+   "y": 1150,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, Cover Wallpaper",
+   "x": 377,
+   "y": 1219,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax",
+   "x": 373,
+   "y": 1303,
+   "w": 292,
+   "h": 219
+  },
+  {
+   "alt": "No Hollywood Ending Picture",
+   "x": 382,
+   "y": 2805,
+   "w": 194,
+   "h": 274
+  },
+  {
+   "alt": "Lady Fantastic Picture",
+   "x": 382,
+   "y": 3129,
+   "w": 194,
+   "h": 146
+  },
+  {
+   "alt": "The Bank Robbers Picture",
+   "x": 382,
+   "y": 3314,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Sleepaway Picture",
+   "x": 382,
+   "y": 3467,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Halifax Picture",
+   "x": 382,
+   "y": 3648,
+   "w": 194,
+   "h": 146
+  },
+  {
+   "alt": "Socratic Picture",
+   "x": 382,
+   "y": 3833,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Late Night Office HOurs With Edgemin & K",
+   "x": 382,
+   "y": 4000,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "All Rights Reserved Picture",
+   "x": 382,
+   "y": 4133,
+   "w": 194,
+   "h": 114
+  }
+ ]
+}

@@ -1,0 +1,455 @@
+{
+ "tiles": [],
+ "url": "https://nmr.gifcommit.com/releases.shtml",
+ "title": "[ NO MILK RECORDS | RELEASES ] CDs LPs EPs Catalog",
+ "width": 1440,
+ "height": 1680,
+ "headings": [
+  {
+   "tag": "H1",
+   "text": "NMR NEWSLETTER",
+   "x": 373,
+   "y": 125,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NMR RADIO PLAYERS",
+   "x": 373,
+   "y": 229,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "FEATURED ITEMS",
+   "x": 373,
+   "y": 643,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "TOP DOWNLOADS",
+   "x": 373,
+   "y": 1085,
+   "w": 172,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "RELEASE HISTORY",
+   "x": 562,
+   "y": 125,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NMRX001",
+   "x": 562,
+   "y": 335,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "Sleepaway",
+   "x": 562,
+   "y": 666,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "\"Sampler\"",
+   "x": 562,
+   "y": 680,
+   "w": 292,
+   "h": 14
+  },
+  {
+   "tag": "H2",
+   "text": "Three Song CD/EP",
+   "x": 562,
+   "y": 708,
+   "w": 292,
+   "h": 11
+  },
+  {
+   "tag": "H2",
+   "text": "Exclusive online and tour release",
+   "x": 562,
+   "y": 719,
+   "w": 292,
+   "h": 11
+  },
+  {
+   "tag": "H2",
+   "text": "Running Time: 12:39",
+   "x": 562,
+   "y": 730,
+   "w": 292,
+   "h": 11
+  },
+  {
+   "tag": "H2",
+   "text": "Recorded at Watchmen Studios | Lockport, NY",
+   "x": 562,
+   "y": 741,
+   "w": 292,
+   "h": 11
+  },
+  {
+   "tag": "H2",
+   "text": "Produced, Enginered + Mixed by Doug White",
+   "x": 562,
+   "y": 752,
+   "w": 292,
+   "h": 11
+  },
+  {
+   "tag": "H1",
+   "text": "FEATURED ARTISTS",
+   "x": 871,
+   "y": 125,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "NO HOLLYWOOD ENDING",
+   "x": 871,
+   "y": 153,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "LADY FANTASTIC",
+   "x": 871,
+   "y": 477,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "THE BANK ROBBERS",
+   "x": 871,
+   "y": 662,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SLEEPAWAY",
+   "x": 871,
+   "y": 815,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALUMNI ARTISTS",
+   "x": 871,
+   "y": 968,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "HALIFAX",
+   "x": 871,
+   "y": 996,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "SOCRATIC",
+   "x": 871,
+   "y": 1181,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "PODCAST EPISODES",
+   "x": 871,
+   "y": 1334,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "REST IN PEACE",
+   "x": 871,
+   "y": 1453,
+   "w": 196,
+   "h": 14
+  },
+  {
+   "tag": "H1",
+   "text": "ALL RIGHTS RESERVED",
+   "x": 871,
+   "y": 1481,
+   "w": 196,
+   "h": 14
+  }
+ ],
+ "images": [
+  {
+   "alt": "",
+   "x": 369,
+   "y": 49,
+   "w": 73,
+   "h": 38
+  },
+  {
+   "alt": "No Hollywood Ending - Everybody's Talkin",
+   "x": 603,
+   "y": 49,
+   "w": 468,
+   "h": 60
+  },
+  {
+   "alt": "vol6 cover",
+   "x": 369,
+   "y": 300,
+   "w": 180,
+   "h": 180
+  },
+  {
+   "alt": "",
+   "x": 369,
+   "y": 532,
+   "w": 180,
+   "h": 49
+  },
+  {
+   "alt": "",
+   "x": 369,
+   "y": 586,
+   "w": 180,
+   "h": 49
+  },
+  {
+   "alt": "No Hollywood Ending, EVerybody's Talking",
+   "x": 373,
+   "y": 671,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Milk Records, Black Logo Zip-Up Hoodi",
+   "x": 373,
+   "y": 740,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Milk Records, White Logo Zip-Up Hoodi",
+   "x": 373,
+   "y": 809,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Sleepaway CD/LP",
+   "x": 373,
+   "y": 878,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "The Bank Robbers, Tomorrow Belongs To Me",
+   "x": 373,
+   "y": 947,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Hollywood Ending, Bones T-Shirt",
+   "x": 373,
+   "y": 1016,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Flower Buddy Icon",
+   "x": 373,
+   "y": 1287,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Horror Wallpaper",
+   "x": 373,
+   "y": 1356,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Name Buddy Icon",
+   "x": 373,
+   "y": 1425,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Sampler CD/EP Mini Cover",
+   "x": 564,
+   "y": 155,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Tourmaline, Strange Distress Calls CD/LP",
+   "x": 622,
+   "y": 155,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "NMR, Sampler Vol.4 CD/LP Mini Cover",
+   "x": 680,
+   "y": 155,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, A Writer's Reference (Re-Issue)",
+   "x": 738,
+   "y": 155,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "All Rights Reserved, Remind Me To Burn T",
+   "x": 796,
+   "y": 155,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "NMR, Sampler Vol.3 CD/LP Mini Cover",
+   "x": 564,
+   "y": 211,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Halifax, A Writer's Reference CD/EP Mini",
+   "x": 622,
+   "y": 211,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "No Hollywood Ending, It's All A Nightmar",
+   "x": 680,
+   "y": 211,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Runaway Orange, The Cutting Room CD/LP M",
+   "x": 738,
+   "y": 211,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "NMR, Sampler Vol.2 CD/LP Mini Cover",
+   "x": 796,
+   "y": 211,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "The Bank Robbers, The Pattern Reversed C",
+   "x": 564,
+   "y": 267,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "NMR, Sampler Vol.1 CD/LP Mini Cover",
+   "x": 622,
+   "y": 267,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Socratic, It's Getting Late CD/EP Mini C",
+   "x": 680,
+   "y": 267,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "Sleepaway, Sampler CD/EP Cover",
+   "x": 562,
+   "y": 363,
+   "w": 292,
+   "h": 292
+  },
+  {
+   "alt": "No Hollywood Ending Picture",
+   "x": 871,
+   "y": 167,
+   "w": 194,
+   "h": 274
+  },
+  {
+   "alt": "Lady Fantastic Picture",
+   "x": 871,
+   "y": 491,
+   "w": 194,
+   "h": 146
+  },
+  {
+   "alt": "The Bank Robbers Picture",
+   "x": 871,
+   "y": 676,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Sleepaway Picture",
+   "x": 871,
+   "y": 829,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Halifax Picture",
+   "x": 871,
+   "y": 1010,
+   "w": 194,
+   "h": 146
+  },
+  {
+   "alt": "Socratic Picture",
+   "x": 871,
+   "y": 1195,
+   "w": 194,
+   "h": 114
+  },
+  {
+   "alt": "Late Night Office HOurs With Edgemin & K",
+   "x": 871,
+   "y": 1362,
+   "w": 52,
+   "h": 52
+  },
+  {
+   "alt": "All Rights Reserved Picture",
+   "x": 871,
+   "y": 1495,
+   "w": 194,
+   "h": 114
+  }
+ ]
+}

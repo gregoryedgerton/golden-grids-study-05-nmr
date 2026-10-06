@@ -1,0 +1,430 @@
+/*_______Low-Bandwidth Style Sheet �2005 www.nomilkrecords.com__ */
+
+/* ---------------------------------------------- Basic Rules -- */
+
+#banner img {
+  display: block;
+  border: 0;
+  float: left;
+}
+
+#sectionitem img {
+  display: block;
+  border: 1px solid #4f4a40;
+  float: left;
+}
+
+#sectionitemlong img {
+  display: block;
+  border: 1px solid #4f4a40;
+  float: left;
+}
+
+#sectionpost img {
+  display: block;
+  border: 1px solid #4f4a40;
+}
+
+#storepost img {
+  display: block;
+  border: 1px solid #4f4a40;
+  float: left;
+}
+
+/* --------------------------------------------------- Layout -- */
+
+#footer {
+  clear: both;
+  padding: 0 0.75em 0 0.75em;
+  margin-top: 0px;
+}
+
+body {
+  font-family: arial, helvetica, serif;
+  padding: 2em;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  background-image: url(http://nmr.gifcommit.com/images/pattern.gif);
+  background-repeat: repeat;
+}
+
+#container {
+  width: 62em;
+  background-color: #c1bcb7;
+  padding: 0px;
+  margin: auto;
+  border: 1px solid #38342c;
+  voice-family: inherit;
+  voice-family: '"}"';
+  width: 60em;
+}
+
+html > body #container {
+  width: 60em;
+}
+
+#mailing {
+  width: 170px;
+  height: 120px;
+  background-color: #edebe8;
+  font: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: 0 0 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#handler {
+  font: inherit;
+  font-weight: bold;
+  color: #38342c;
+}
+
+#left {
+  background-color: #c1bcb7;
+  width: 15em;
+  padding: 0 0.75em 0 0.75em;
+  float: left;
+}
+
+#middle {
+  background-color: #c1bcb7;
+  width: 25em;
+  padding: 0;
+  float: left;
+}
+
+#right {
+  background-color: #c1bcb7;
+  width: 17em;
+  padding: 0 0.75em 0 0.75em;
+  float: left;
+}
+
+#storeleft {
+  background-color: #c1bcb7;
+  width: 15em;
+  padding: 0 0 0 0.75em;
+  float: left;
+}
+
+#storeright {
+  background-color: #c1bcb7;
+  width: 42.75em;
+  padding: 0 0.75em 0 0.75em;
+  float: left;
+}
+
+#sectiontitle {
+  background-color: #f5f4f2;
+  padding: 3px;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #aa9f90;
+}
+
+#sectionpost {
+  background-color: #edebe8;
+  padding: 3px;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #aa9f90;
+}
+
+#sectiontag {
+  background-color: #edebe8;
+  padding: 3px;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #aa9f90;
+}
+
+#adpost {
+  background-color: #c1bcb7;
+  padding: 0px;
+  margin: 0 0 0.4em 0;
+  border: 0px;
+}
+
+#sectionitem {
+  background-color: #edebe8;
+  padding: 3px;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #aa9f90;
+  height: 55px;
+}
+
+#sectionitemlong {
+  background-color: #edebe8;
+  padding: 3px;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #aa9f90;
+}
+
+#storepost {
+  background-color: #edebe8;
+  padding: 3px;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #aa9f90;
+  height: 250px;
+}
+
+#banner {
+  padding: 2em 0.75em 1em 0.75em;
+  height: 60px;
+}
+
+#banner h1 {
+  font-family: inherit;
+  font-size: 14px;
+  color: #38342c;
+  font-weight: bold;
+  float: right;
+  padding: 0px;
+  margin: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------- Navigation -- */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #aa9f90;
+  text-decoration: none;
+}
+
+#nav li li a {
+  display: block;
+  font-weight: bold;
+  color: #aa9f90;
+  padding: 0.2em 5px;
+}
+
+#nav li li a:hover {
+  display: block;
+  padding: 0.2em 5px;
+  color: #f5f4f2;
+  background-color: #4f4a40;
+}
+
+li {
+  float: left;
+  position: relative;
+  width: 12em;
+  text-align: center;
+  cursor: default;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #38342c;
+}
+
+li#first {
+  border-left-width: 0.25em;
+}
+
+li#last {
+  border-right-width: 0.25em;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-weight: normal;
+  padding: 2px 0 0 0;
+  background-color: #38342c;
+}
+
+li > ul {
+  top: auto;
+  left: auto;
+}
+
+li li {
+  display: block;
+  float: none;
+  border: 0;
+  padding: 2px 0 0 0;
+}
+
+li:hover ul,
+li.over ul {
+  display: block;
+}
+
+select {
+  background-color: #4f4a40;
+  font-weight: bold;
+  font-size: 12px;
+  color: #aa9f90;
+  margin: 0;
+  padding: 0;
+}
+
+#storenav {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------- Typography -- */
+
+#sectionpost p {
+  font-family: inherit;
+  font-size: 10px;
+  color: #4f4a40;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+#sectiontag p {
+  font-family: inherit;
+  font-size: 10px;
+  color: #4f4a40;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+#storepost p {
+  font-family: inherit;
+  font-size: 10px;
+  color: #4f4a40;
+  padding: 5px 0 0 10px;
+  margin: 0 0 0 250px;
+  font-weight: normal;
+}
+
+#sectionitem p {
+  font-family: inherit;
+  font-size: 10px;
+  color: #4f4a40;
+  padding: 0;
+  margin: 0 0 0 55px;
+  font-weight: normal;
+}
+
+#sectionitemlong p {
+  font-family: inherit;
+  font-size: 10px;
+  color: #4f4a40;
+  padding: 0;
+  margin: 0 0 0 55px;
+  font-weight: normal;
+}
+
+p a {
+  font-weight: bold;
+  color: #38342c;
+  text-decoration: underline;
+}
+
+p a:hover {
+  font-weight: bold;
+  color: #aa9f90;
+  text-decoration: none;
+}
+
+#sectiontitle h1 {
+  font-family: inherit;
+  font-size: 12px;
+  color: #38342c;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#sectionpost h1 {
+  font-family: inherit;
+  font-size: 12px;
+  color: #38342c;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+#storepost h1 {
+  font-family: inherit;
+  font-size: 12px;
+  color: #38342c;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+  margin: 0 0 0 250px;
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 10px;
+  color: #38342c;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------------------------------- Banner -- */
+
+#banner a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5f4f2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#banner a:hover {
+  font-size: 18px;
+  font-weight: bold;
+  color: #aa9f90;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#banner p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 10px;
+  color: #4f4a40;
+  padding: 0;
+  margin: 0px 0 0 0px;
+}
+
+#banner p b {
+  font-family: inherit;
+  font-size: 14px;
+  color: #4f4a40;
+  text-transform: uppercase;
+}
+
+.bannerad {
+  float: right;
+  border: 0px;
+}
+
+.formbox {
+  border: solid 1px #4f4a40;
+  background-color: #ffffff;
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+  color: #38342c;
+}
+
+.addtocart {
+  border: solid 1px #4f4a40;
+  background-color: #ffffff;
+  font-size: 10px;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.sizeselect {
+  padding: 0;
+  margin: 0;
+}
