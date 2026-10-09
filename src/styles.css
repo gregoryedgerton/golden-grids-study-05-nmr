@@ -19,7 +19,7 @@
   --red-ground: #b0231f;   /* the red under white type */
   --font: Arial, Helvetica, sans-serif;
   --measure: 60ch;
-  --pattern: url("/nmr/site/images/pattern.gif");
+  /* --pattern is set in Page.tsx, where the Pages base path is known. */
   /* The tools panel and expand helper read these. */
   --bg: var(--panel-2); --fg: var(--ink); --line: var(--ink); --card: var(--panel); --btn: var(--panel-2); --line-light: var(--panel-2);
   --tag-bg: var(--ink); --tag-fg: var(--panel-2);

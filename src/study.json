@@ -55,5 +55,6 @@
   "owner": "the bands and artists named",
   "affiliation": "This rebuild is by Greg Edgerton, who co-ran the label, and uses its material with his permission. The bands, their names, their songs and their pictures remain theirs.",
   "repo": "https://github.com/gregoryedgerton/golden-grids-study-05-nmr",
-  "updated": "October 9, 2026"
+  "updated": "October 9, 2026",
+  "icon": "nmr/site/images/nmr_logo.gif"
 }
