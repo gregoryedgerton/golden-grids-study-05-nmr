@@ -1,0 +1,59 @@
+{
+  "number": "05",
+  "name": "No Milk Records",
+  "notice": "A layout study, not the label's live site: the 2007 No Milk Records website rebuilt with Golden Grids from the label's own material, with its owner's permission. The store takes no orders.",
+  "pages": {
+    "audio": "Audio",
+    "band-arr": "All Rights Reserved",
+    "band-hx": "Halifax",
+    "band-lf": "Lady Fantastic",
+    "band-nhe": "No Hollywood Ending",
+    "band-ro": "Runaway Orange",
+    "band-sa": "Sleepaway",
+    "band-so": "Socratic",
+    "band-tbr": "The Bank Robbers",
+    "band-to": "Tourmaline",
+    "index": "News",
+    "info": "Information",
+    "media": "Media",
+    "releases": "Releases",
+    "reviews": "Reviews",
+    "store": "Store",
+    "tours": "Tours"
+  },
+  "summary": "The whole website of No Milk Records, a DIY punk and emo label run from Jackson, New Jersey, from 2005 to 2007, rebuilt as seventeen pages of golden grids. It is the one study in the series made from its reference's actual content, because the label was the author's own.",
+  "reviewed": {
+    "date": "October 6, 2026",
+    "method": "Crawled from the news page through every page it links to: 104 pages and 334 files, which a script in the source (captures/extract.py) turns into the data these pages are drawn from.",
+    "pages": [
+      {
+        "label": "nmr.gifcommit.com, the label's site as it stood in 2007",
+        "url": "https://nmr.gifcommit.com/news.shtml"
+      }
+    ]
+  },
+  "real": [
+    "Everything shown: the news, the bands, the releases, the reviews, the tour dates, the store's catalogue, the audio and the video are the label's own, from 2005 to 2007.",
+    "The label was run by Greg Edgerton and Kyle Kraszewski. The original site was designed by Macabre Studios."
+  ],
+  "invented": [
+    "The layout. 104 pages are regrouped into seventeen, and nothing of the original design is kept.",
+    "The store is a record of what was sold. Its checkout is retired and nothing can be bought.",
+    "Three videos were re-encoded so that current browsers can play them. The site's 2005 archive could not be recovered and is missing."
+  ],
+  "assets": [
+    {
+      "what": "Copy, photographs, artwork, recordings and video",
+      "source": "No Milk Records, 2005 to 2007, used with the permission of its owner, who is this study's author",
+      "url": "https://nmr.gifcommit.com/news.shtml"
+    },
+    {
+      "what": "Typeface",
+      "source": "Arial, as the original site used; no web font is loaded."
+    }
+  ],
+  "owner": "the bands and artists named",
+  "affiliation": "This rebuild is by Greg Edgerton, who co-ran the label, and uses its material with his permission. The bands, their names, their songs and their pictures remain theirs.",
+  "repo": "https://github.com/gregoryedgerton/golden-grids-study-05-nmr",
+  "updated": "October 9, 2026"
+}

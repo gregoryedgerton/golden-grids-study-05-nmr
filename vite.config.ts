@@ -2,6 +2,7 @@ import { resolve } from "node:path";
 import { readdirSync } from "node:fs";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { studyMeta } from "./study.meta";
 
 function pagesBase(): string {
   const repo = process.env.GITHUB_REPOSITORY?.split("/")[1];
@@ -15,6 +16,6 @@ const pages = readdirSync(__dirname).filter((f) => f.endsWith(".html")).map((f) 
 
 export default defineConfig({
   base: pagesBase(),
-  plugins: [react()],
+  plugins: [react(), studyMeta()],
   build: { rollupOptions: { input: Object.fromEntries(pages.map((p) => [p, resolve(__dirname, `${p}.html`)])) } },
 });

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Tools } from "./tools";
+import { StudyBanner, StudyDisclosure } from "./study";
 import { asset, BAND_ORDER, bands } from "../data";
 import "../styles.css";
 
@@ -20,6 +21,7 @@ export function Page({ current, title, standfirst, children }: { current: string
   return (
     <>
       <a className="skip" href="#content">Skip to content</a>
+      <StudyBanner />
       <Tools />
       <header className="masthead">
         <div className="masthead__row">
@@ -50,17 +52,7 @@ export function Page({ current, title, standfirst, children }: { current: string
 
       <main id="content">{children}</main>
 
-      <footer className="colophon">
-        <p>
-          A layout study of the No Milk Records website, <a href="https://nmr.gifcommit.com/news.shtml">nmr.gifcommit.com</a>,
-          as it stood in 2007: a DIY punk and emo label run from Jackson, New Jersey, 2005–2007, by Greg Edgerton and Kyle
-          Kraszewski. The copy, photographs, artwork and recordings are the label's own and are used with its owner's
-          permission; the original site design was by Macabre Studios. Built with{" "}
-          <a href="https://github.com/gregoryedgerton/golden-grids">Golden Grids</a> ·{" "}
-          <a href="https://www.npmjs.com/package/@gifcommit/golden-grids">npm</a> ·{" "}
-          <a href="https://gregoryedgerton.github.io/golden-grids/">generator</a>.
-        </p>
-      </footer>
+      <StudyDisclosure />
     </>
   );
 }
