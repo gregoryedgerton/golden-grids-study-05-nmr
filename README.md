@@ -36,13 +36,9 @@ memorial. Arial at 12px, lowercase bold section titles, 1px borders on every
 image. The 2005 news archive lived on nomilkrecords.com and is gone; that
 domain now redirects to a parking page.
 
-## The claim
+## Approach
 
-A DIY label's site is a stack of modules of unequal weight, a lead story, a
-roster, a catalogue, a store, and the three-column template of the time
-gave each the same column. Here every module is a band whose squares say
-which thing matters most, the side columns become bands placed where a page
-wants a break, and nothing on the site is left out.
+The original site used the three-column template of its time: a centre column of content between two side columns of newsletter, players, featured items and artists. The study sets every module as a band of squares, places the side columns' modules as bands of their own within each page, and keeps everything the site held.
 
 ## The pages
 
@@ -101,24 +97,23 @@ same greys turned over under the same pattern.
   page ground and failed contrast; nav links under 24px; crawl headings
   that broke heading order.
 
-## What did not
+## Notes for review
 
-- **The 2005 archive is lost**, and with it the label's first year.
-- **Banners are missing.** The banner pages were linked with single-quoted
-  hrefs the crawler did not follow; the ads themselves are mirrored but not
-  shown.
-- **The store does not sell.** Items, prices, sizes and availability are
-  there and the controls work; the PayPal checkout is retired, so Add to
-  cart is disabled and says so.
-- **Eight-square bands cannot hold words.** Audio at 820 and 1440 moved to
-  bands of five, and at 390 to a list, because the smallest of eight squares
-  is 40px.
-- **Buddy icons are 50px.** Shown at up to 320px they are pixel art; two
-  squares of type take the sizes they could not fill.
-- **The side columns are gone.** The newsletter, players, featured items and
-  artists recur on every page of the original; here each appears once per
-  page as a band, which loses the original's constant presence of the
-  roster.
+Observations for whoever reviews this study, recorded without a verdict. Whether the layout suits the page is assessed separately, after every study has been reviewed.
+
+- **2005 archive.** The label's first year of pages could not be recovered.
+- **Banners.** The banner pages were linked in a way the crawler did not follow; the images are mirrored but not shown.
+- **Store.** Items, prices, sizes and availability are shown and the controls work; the checkout is retired, so Add to cart is disabled and says so.
+- **Audio.** Listed in bands of five at 820 and 1440 and as a list at 390; in a band of eight the smallest square is 40px.
+- **Buddy icons.** The originals are 50px and are shown at up to 320px.
+- **Side columns.** In the original they repeat on every page; here each module appears once per page.
+
+## Disclosure
+
+Every page says what it is in three places, all read from
+[`src/study.json`](src/study.json): its title and description, a sticky notice
+at the top, and a disclosure at the very end listing the pages reviewed, what
+is real, what is invented or changed, and where each kind of asset came from.
 
 ## Study tools
 
