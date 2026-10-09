@@ -19,7 +19,6 @@
   --red-ground: #b0231f;   /* the red under white type */
   --font: Arial, Helvetica, sans-serif;
   --measure: 60ch;
-  /* --pattern is set in Page.tsx, where the Pages base path is known. */
   /* The tools panel and expand helper read these. */
   --bg: var(--panel-2); --fg: var(--ink); --line: var(--ink); --card: var(--panel); --btn: var(--panel-2); --line-light: var(--panel-2);
   --tag-bg: var(--ink); --tag-fg: var(--panel-2);
@@ -42,7 +41,7 @@
    over under the same pattern. */
 
 * { box-sizing: border-box; }
-html { background: var(--paper) var(--pattern) repeat; color: var(--ink-soft); }
+html { background: var(--paper); color: var(--ink-soft); }
 @media (prefers-color-scheme: dark) { html { background-blend-mode: multiply; background-color: #1a1815; } }
 body { margin: 0; font: 15px/1.55 var(--font); }
 a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); }

@@ -1,4 +1,4 @@
-import { useLayoutEffect, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Tools } from "./tools";
 import { StudyBanner, StudyDisclosure } from "./study";
 import { asset, BAND_ORDER, bands } from "../data";
@@ -18,8 +18,6 @@ export const NAV = [
 ] as const;
 
 export function Page({ current, title, standfirst, children }: { current: string; title: string; standfirst?: string; children: ReactNode }) {
-  // The page ground is the original site's tile. Its address needs the Pages base path, which CSS does not know.
-  useLayoutEffect(() => { document.documentElement.style.setProperty("--pattern", `url("${asset("nmr/site/images/pattern.gif")}")`); }, []);
   return (
     <>
       <a className="skip" href="#content">Skip to content</a>
