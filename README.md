@@ -107,6 +107,8 @@ Observations for whoever reviews this study, recorded without a verdict. Whether
 - **Audio.** Listed in bands of five at 820 and 1440 and as a list at 390; in a band of eight the smallest square is 40px.
 - **Buddy icons.** The originals are 50px and are shown at up to 320px.
 - **Side columns.** In the original they repeat on every page; here each module appears once per page.
+- **Page tile.** The original stylesheet names a background tile, `site/images/pattern.gif`, that is not in the mirror and returns 404 on the label's site; the page ground is the plain paper colour.
+- **Icon.** The browser icon is the label's own logo, not the yellow study tile the other studies use.
 
 ## Disclosure
 
