@@ -217,6 +217,12 @@ Two geometry rules, verified against source, that every band relies on:
   and `src/data/site.json` stays the crawl as extracted. The study's own
   strings (header, band titles, `study.json`) are written with the new name.
   The reference's name in `study.json` (`name`) stays No Milk Records.
+- **Nothing links to the reference except the notice and the disclosure.** No
+  link in the header, the nav, a band, an opened cell or the footer goes to
+  the site being studied or its apps. Nav items are the reference's own, for
+  show (plain text); only an item that leads to one of the study's own pages
+  or sections is a link. Credits for photographs, maps and facts from other
+  sources may link to those sources. (Greg, 2026-10-09.)
 
 ## API facts, verified against 5.0.0 source
 
