@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useId, useRef, useState, type ReactNode } from "react";
 import "./expand.css";
+import { Cased } from "./Cased";
 
 /**
  * Expand a cell. A slot that shows a summary becomes the whole band and
@@ -204,7 +205,7 @@ export function ExpandableMedia({
       <button className="media__open" {...group.triggerProps(slotKey)}>
         <span className="visually-hidden">Open {caption ?? alt}</span>
       </button>
-      {caption && <figcaption className="media__caption">{caption}</figcaption>}
+      {caption && <figcaption className="media__caption"><Cased>{caption}</Cased></figcaption>}
       {children}
     </figure>
   );

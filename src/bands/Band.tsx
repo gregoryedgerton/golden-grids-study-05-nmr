@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Cased } from "../lib/Cased";
 
 /**
  * A band is one small-range grid with one editorial job. Bands stack; they do
@@ -25,7 +26,7 @@ export function Band({
   return (
     <section className={`band ${kind}`} id={id} aria-labelledby={`${id}-title`}>
       <header className="band__header">
-        <h2 id={`${id}-title`} className="band__title">{title}</h2>
+        <h2 id={`${id}-title`} className="band__title"><Cased>{title}</Cased></h2>
         {lesson && <p className="band__lesson">{lesson}</p>}
         {note && <p className="band__note">{note}{cap ? ` · width capped at ${cap}` : ""}</p>}
       </header>

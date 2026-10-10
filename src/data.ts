@@ -25,12 +25,14 @@ export interface Song { band: string; file: string; label: string; song: string 
  * crawl, unchanged; delete the call to `renamed` below to read it as written.
  */
 export const BRAND = "GIFmilk Records";
-const say = (text: string) => text.replace(/no milk/gi, "GIFmilk").replace(/\bNMR\b(?![- ]?\d)/g, "GIFmilk");
+const say = (text: string) => text.replace(/no milk records/gi, "GIFmilk Records").replace(/no milk/gi, "GIFmilk").replace(/\bNMR\b(?![- ]?\d)/g, "GIFmilk");
+/** In HTML the name is wrapped so a stylesheet that sets type in capitals leaves its case alone. */
+const sayHtml = (text: string) => say(text).replace(/GIFmilk(?: Records)?/g, (m) => `<span class="brand-case">${m}</span>`);
 function rename(value: string): string {
   // A path or an address: no spaces, and a slash or a dot in it.
   if (!/\s/.test(value) && /[/.]/.test(value)) return value;
   // HTML: the text between tags, and alt text; never an address inside a tag.
-  if (value.includes("<")) return value.replace(/(^|>)([^<]+)/g, (_, open, text) => open + say(text)).replace(/alt="([^"]*)"/g, (_, alt) => `alt="${say(alt)}"`);
+  if (value.includes("<")) return value.replace(/(^|>)([^<]+)/g, (_, open, text) => open + sayHtml(text)).replace(/alt="([^"]*)"/g, (_, alt) => `alt="${say(alt)}"`);
   return say(value);
 }
 function renamed<T>(value: T): T {

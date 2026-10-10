@@ -7,6 +7,7 @@ import { useViewport } from "../lib/viewport";
 import { audio, pages, asset } from "../data";
 import { SongCard, FeaturedArtistsBand } from "../lib/modules";
 import { Prose } from "../lib/Prose";
+import { Cased } from "../lib/Cased";
 
 /** Every MP3 the label gave away, playable. Fourteen songs: 8 + 5 + 1. */
 function Songs({ title, list, placement, clockwise, lesson, id }: { title: string; list: typeof audio; placement: PlacementValue; clockwise: boolean; lesson: string; id: string }) {
@@ -18,7 +19,7 @@ function Songs({ title, list, placement, clockwise, lesson, id }: { title: strin
   // room at all; the list is the honest shape there, every song still playable.
   if (viewport === "mobile") return (
     <section className="list-band" id={id} aria-labelledby={`${id}-title`}>
-      <header className="band__header"><h2 id={`${id}-title`} className="band__title">{title}</h2><p className="band__lesson">{lesson}</p></header>
+      <header className="band__header"><h2 id={`${id}-title`} className="band__title"><Cased>{title}</Cased></h2><p className="band__lesson">{lesson}</p></header>
       <ul className="list">{list.map((s) => <li key={s.file}><div className="list__head"><span className="list__k">{s.band}</span> <strong>{s.song}</strong></div><audio controls preload="none" src={asset(s.file)} aria-label={`${s.band}, ${s.song}`} style={{ width: "100%", marginTop: 6 }} /></li>)}</ul>
     </section>
   );

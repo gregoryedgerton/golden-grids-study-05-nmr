@@ -8,6 +8,7 @@ import { Fit } from "./fit";
 import { Prose } from "./Prose";
 import { Band } from "../bands/Band";
 import { asset, bands, BAND_ORDER, store, audio, releases, brief, type Post, type Item, type Song, type Release } from "../data";
+import { Cased } from "./Cased";
 
 /**
  * The modules the original repeated in its side columns on every page:
@@ -29,7 +30,7 @@ export function FeaturedArtistsBand({ except }: { except?: string }) {
             <GoldenBox key={s}>
               <a className="media" href={`./band-${s}.html`} aria-label={b.name}>
                 <img src={asset(b.photo)} alt={`${b.name}, promotional photograph`} loading="lazy" />
-                <p className="media__caption">{b.name}</p>
+                <p className="media__caption"><Cased>{b.name}</Cased></p>
               </a>
             </GoldenBox>
           );
@@ -73,7 +74,7 @@ export function ItemCard({ item, x }: { item: Item; x: ReturnType<typeof useExpa
         <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {item.band} {item.title}</span></button>
         {sale && <span className="product__tag" aria-hidden="true">Sale</span>}
         {!amount && <span className="product__tag product__tag--out" aria-hidden="true">Sold out</span>}
-        <figcaption className="media__caption"><span className="product__price">{amount ?? "—"}</span> {item.band} · {item.kind}</figcaption>
+        <figcaption className="media__caption"><span className="product__price">{amount ?? "—"}</span> <Cased>{item.band}</Cased> · {item.kind}</figcaption>
       </figure>
       {x.isOpen(key) && (
         <ExpandedCell id={x.panelId(key)} title={`${item.band} · ${item.title}`} onClose={x.close} closeRef={x.closeRef}>
@@ -146,7 +147,7 @@ export function SongCard({ song, label }: { song: Song; label?: string }) {
   const fmt = (t: number) => (isFinite(t) ? `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}` : "");
   return (
     <div className="box song">
-      <p className="box__label">{label ?? song.band}</p>
+      <p className="box__label"><Cased>{label ?? song.band}</Cased></p>
       <div className="box__fit"><Fit as="p" max={120}>{song.song}</Fit></div>
       <audio ref={ref} className="box__audio" controls preload="none" src={asset(song.file)} aria-label={`${song.band}, ${song.song}`}
         onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)}
@@ -225,7 +226,7 @@ export function ReleaseCard({ r, x }: { r: Release; x: ReturnType<typeof useExpa
       <figure className="media media--contain" id={key.toLowerCase()}>
         {r.cover && <img src={asset(r.cover)} alt={r.coverAlt} loading="lazy" />}
         <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {r.band}, {r.title}</span></button>
-        <figcaption className="media__caption">{r.catalog} · {r.band}</figcaption>
+        <figcaption className="media__caption">{r.catalog} · <Cased>{r.band}</Cased></figcaption>
       </figure>
       {x.isOpen(key) && (
         <ExpandedCell id={x.panelId(key)} title={`${r.catalog} · ${r.band} · ${r.title}`} onClose={x.close} closeRef={x.closeRef}>

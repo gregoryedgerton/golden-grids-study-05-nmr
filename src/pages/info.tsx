@@ -6,6 +6,7 @@ import { Fact } from "../lib/boxes";
 import { pages } from "../data";
 import { Prose } from "../lib/Prose";
 import { NewsletterBand } from "../lib/modules";
+import { Cased } from "../lib/Cased";
 
 /** Contact, FAQ, jobs, links, street team: the label's involvement pages.
  *  The address gets a band; the rest are lists and prose, as they were. */
@@ -22,7 +23,7 @@ function Contact() {
       </Band>
       <section className="list-band" aria-labelledby="contact-details-title">
         <header className="band__header"><h2 id="contact-details-title" className="band__title">Contact details</h2></header>
-        {pg.sections.map((s) => <div key={s.title}><h3 className="band__title">{s.title}</h3><Prose className="cell__body" html={s.blocks.map((b) => b.html).join("")} /></div>)}
+        {pg.sections.map((s) => <div key={s.title}><h3 className="band__title"><Cased>{s.title}</Cased></h3><Prose className="cell__body" html={s.blocks.map((b) => b.html).join("")} /></div>)}
       </section>
     </>
   );
@@ -41,8 +42,8 @@ function Plain({ id, title, lesson }: { id: string; title: string; lesson?: stri
   const pg = pages[id];
   return (
     <section className="list-band" id={id} aria-labelledby={`${id}-title`}>
-      <header className="band__header"><h2 id={`${id}-title`} className="band__title">{title}</h2>{lesson && <p className="band__lesson">{lesson}</p>}</header>
-      {pg.sections.map((s) => <div key={s.title}>{pg.sections.length > 1 && <h3 className="band__title">{s.title}</h3>}<Prose className="cell__body" html={s.blocks.map((b) => b.html).join("")} /></div>)}
+      <header className="band__header"><h2 id={`${id}-title`} className="band__title"><Cased>{title}</Cased></h2>{lesson && <p className="band__lesson">{lesson}</p>}</header>
+      {pg.sections.map((s) => <div key={s.title}>{pg.sections.length > 1 && <h3 className="band__title"><Cased>{s.title}</Cased></h3>}<Prose className="cell__body" html={s.blocks.map((b) => b.html).join("")} /></div>)}
     </section>
   );
 }

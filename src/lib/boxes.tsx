@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Fit } from "./fit";
 import { ExpandedCell, type ExpandGroup } from "./expand";
+import { Cased } from "./Cased";
 
 /**
  * What goes inside a copy slot. Three kinds, each a flex column that fills
@@ -40,7 +41,7 @@ export function Fact({
   return (
     <>
       <div className={`box${tone ? ` box--${tone}` : ""}`}>
-        {label && <p className="box__label">{label}</p>}
+        {label && <p className="box__label"><Cased>{label}</Cased></p>}
         <div className={`box__fit${align ? ` box__fit--${align}` : ""}`}>
           {/* The ceiling keeps the headline within about eight times the body size, so
               body copy and captions read as part of the same set rather than under it. */}
@@ -74,7 +75,7 @@ export function Fact({
 export function Figure({ label, caption, tone, children }: { label?: string; caption?: string; tone?: string; children: ReactNode }) {
   return (
     <figure className={`box box--figure${tone ? ` box--${tone}` : ""}`}>
-      {label && <p className="box__label">{label}</p>}
+      {label && <p className="box__label"><Cased>{label}</Cased></p>}
       {children}
       {caption && <figcaption className="box__caption">{caption}</figcaption>}
     </figure>
@@ -84,7 +85,7 @@ export function Figure({ label, caption, tone, children }: { label?: string; cap
 export function LinkBox({ label, href, tone, children }: { label: string; href: string; tone?: string; children: ReactNode }) {
   return (
     <a className={`box${tone ? ` box--${tone}` : ""}`} href={href}>
-      <p className="box__label">{label}</p>
+      <p className="box__label"><Cased>{label}</Cased></p>
       <div className="box__fit"><Fit as="span" min={8} max={120}>{children}</Fit></div>
       <div className="box__foot"><span className="box__arrow">Read the section</span></div>
     </a>

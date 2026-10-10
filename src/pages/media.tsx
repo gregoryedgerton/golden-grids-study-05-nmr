@@ -9,6 +9,7 @@ import { Player } from "../lib/clip";
 import { Fact } from "../lib/boxes";
 import { asset, pages, bands, BAND_ORDER } from "../data";
 import { Prose } from "../lib/Prose";
+import { Cased } from "../lib/Cased";
 
 /** Media: buddy icons, wallpapers, banners, video, podcast. The icons are
  *  the one content on the site that was already square. */
@@ -78,7 +79,7 @@ function Wallpapers() {
               <figure className="media">
                 <img src={asset(im.full)} alt={im.alt} loading="lazy" />
                 <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {im.alt || "wallpaper"}</span></button>
-                <figcaption className="media__caption">{im.band}</figcaption>
+                <figcaption className="media__caption"><Cased>{im.band}</Cased></figcaption>
               </figure>
               {x.isOpen(key) && (
                 <ExpandedCell id={x.panelId(key)} title={im.alt || "Wallpaper"} onClose={x.close} closeRef={x.closeRef}>

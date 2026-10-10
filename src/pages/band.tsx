@@ -9,6 +9,7 @@ import { Fact } from "../lib/boxes";
 import { Player } from "../lib/clip";
 import { asset, bands, store, audio, pages, brief } from "../data";
 import { FeaturedArtistsBand, FeaturedItemsBand, DownloadsBand, ReleaseCard, releasesOf } from "../lib/modules";
+import { Cased } from "../lib/Cased";
 
 const slug = document.getElementById("root")!.dataset.band!;
 const band = bands[slug];
@@ -103,7 +104,7 @@ function Promo() {
               <figure className="media media--contain">
                 <img src={asset(im.kind === "Wallpaper" ? full : im.src)} alt={im.alt} loading="lazy" style={im.kind === "Buddy icon" ? { imageRendering: "pixelated" } : undefined} />
                 <button className="media__open" {...x.triggerProps(key)}><span className="visually-hidden">Open {im.alt || im.kind}</span></button>
-                <figcaption className="media__caption">{im.kind}</figcaption>
+                <figcaption className="media__caption"><Cased>{im.kind}</Cased></figcaption>
               </figure>
               {x.isOpen(key) && (
                 <ExpandedCell id={x.panelId(key)} title={im.alt || im.kind} onClose={x.close} closeRef={x.closeRef}>
