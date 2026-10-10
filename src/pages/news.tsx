@@ -56,7 +56,7 @@ function Archive() {
 }
 
 mount(
-  <Page current="index.html" title="news" standfirst="Hype, gossip, shows. No Milk Records, Jackson, New Jersey.">
+  <Page current="index.html" title="news" standfirst="Hype, gossip, shows. GIFmilk Records, Jackson, New Jersey.">
     <CurrentNews />
     <FeaturedArtistsBand />
     <FeaturedItemsBand />

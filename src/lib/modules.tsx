@@ -178,9 +178,9 @@ export function NewsletterBand() {
   // the type takes the hero and the form has 453px in the square beside it.
   const typeHero = viewport === "desktop";
   return (
-    <Band id="newsletter" title="NMR newsletter" lesson="Name and email, for news on shows and releases; the original went to a mailing list run from the label's office. Nothing is sent from here." note={`from=1 to=${single ? 1 : 3} · placement="bottom" · clockwise=false · type fills the hero`}>
+    <Band id="newsletter" title="GIFmilk newsletter" lesson="Name and email, for news on shows and releases; the original went to a mailing list run from the label's office. Nothing is sent from here." note={`from=1 to=${single ? 1 : 3} · placement="bottom" · clockwise=false · type fills the hero`}>
       <GoldenGrid from={1} to={single ? 1 : 3} placement="bottom" clockwise={false}>
-        {!single && typeHero && <GoldenBox><Fact label="No Milk Records" tone="ink">{"Hype,\ngossip,\nshows"}</Fact></GoldenBox>}
+        {!single && typeHero && <GoldenBox><Fact label="GIFmilk Records" tone="ink">{"Hype,\ngossip,\nshows"}</Fact></GoldenBox>}
         <GoldenBox>
           <div className="box">
             <p className="box__label">Sign up</p>
@@ -192,7 +192,7 @@ export function NewsletterBand() {
             </form>
           </div>
         </GoldenBox>
-        {!single && !typeHero && <GoldenBox><Fact label="No Milk Records" tone="ink">{"Hype,\ngossip,\nshows"}</Fact></GoldenBox>}
+        {!single && !typeHero && <GoldenBox><Fact label="GIFmilk Records" tone="ink">{"Hype,\ngossip,\nshows"}</Fact></GoldenBox>}
         <GoldenBox>
           <Fact label="Since 2005" fitClass="fit--light">{"Jackson,\nNew Jersey"}</Fact>
         </GoldenBox>

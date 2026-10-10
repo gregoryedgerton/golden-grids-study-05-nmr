@@ -16,9 +16,33 @@ export interface Show { date: string; venue: string; bands: string }
 export interface Item { slug: string; code: string; kind: string; image: string | null; imageAlt: string; band: string; title: string; price: string | null; description: string[]; sizes: string[] }
 export interface Song { band: string; file: string; label: string; song: string }
 
-const data = site as unknown as {
+/**
+ * The label's name, renamed as the crawl is read. The study's parody name is
+ * GIFmilk Records, so wherever the site's own text says "No Milk" (in any
+ * case) or uses NMR as the label's short name, the page says GIFmilk. What is
+ * left alone: catalogue numbers (NMR013), web addresses, file names and the
+ * pictures, which are the label's as they were. `site.json` itself is the
+ * crawl, unchanged; delete the call to `renamed` below to read it as written.
+ */
+export const BRAND = "GIFmilk Records";
+const say = (text: string) => text.replace(/no milk/gi, "GIFmilk").replace(/\bNMR\b(?![- ]?\d)/g, "GIFmilk");
+function rename(value: string): string {
+  // A path or an address: no spaces, and a slash or a dot in it.
+  if (!/\s/.test(value) && /[/.]/.test(value)) return value;
+  // HTML: the text between tags, and alt text; never an address inside a tag.
+  if (value.includes("<")) return value.replace(/(^|>)([^<]+)/g, (_, open, text) => open + say(text)).replace(/alt="([^"]*)"/g, (_, alt) => `alt="${say(alt)}"`);
+  return say(value);
+}
+function renamed<T>(value: T): T {
+  if (typeof value === "string") return rename(value) as T;
+  if (Array.isArray(value)) return value.map(renamed) as T;
+  if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, renamed(v)])) as T;
+  return value;
+}
+
+const data = renamed(site as unknown as {
   pages: Record<string, PageData>; news: Post[]; bands: Record<string, Band>; releases: Release[]; tours: Show[]; store: Item[]; audio: Song[];
-};
+});
 
 export const pages = data.pages;
 export const news = data.news;

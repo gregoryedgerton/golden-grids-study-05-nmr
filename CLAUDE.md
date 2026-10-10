@@ -197,19 +197,26 @@ Two geometry rules, verified against source, that every band relies on:
 
 - **The study's brand is a parody name**: `GIF` in capitals, then the tail of
   the reference's name in lower case (GIFbnb, GIFspn, GIFflix, GIFrs, GIFx,
-  GIFbase, GIFmutual, GIFn'now, GIFbell, GIFipedia). Do not use GIFcommit as
+  GIFbase, GIFmutual, GIFn'now, GIFbell, GIFipedia, GIFify, GIFmilk Records).
+  Do not use GIFcommit as
   a service's name; it is only the npm scope of the library.
 - **A play on the reference's premium tier or named service carries the
   parody name and keeps the alteration**: GIFspn+, GIFbase One, GIFx Premium.
 - Write the name exactly so; never change its case in CSS. The notice in
   `src/study.json` says it is a parody name, and the disclosure lists it
   under what is invented. (Greg, 2026-10-09.)
-- This study has no invented service and keeps its own names.
 - **The header is the reference's header.** Take its structure from the
   page being rebuilt: the parody name where the logo is, its nav items, its
   search, its tabs. Do not write "layout study", a study number or the
   reference's name there; the notice above and the disclosure below say that
   on every page. (Greg, 2026-10-09.)
+- **Here the parody name is GIFmilk Records** (Greg, 2026-10-09), for his own
+  label, No Milk Records. `src/data.ts` renames the crawl as it is read:
+  "No Milk" in any case, and NMR as the label's short name, become GIFmilk.
+  Catalogue numbers (NMR013), addresses, file names and images are left alone,
+  and `src/data/site.json` stays the crawl as extracted. The study's own
+  strings (header, band titles, `study.json`) are written with the new name.
+  The reference's name in `study.json` (`name`) stays No Milk Records.
 
 ## API facts, verified against 5.0.0 source
 

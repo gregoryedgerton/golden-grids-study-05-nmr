@@ -25,8 +25,8 @@ export function Page({ current, title, standfirst, children }: { current: string
       <Tools />
       <header className="masthead">
         <div className="masthead__row">
-          <a className="masthead__logo" href="./index.html"><img src={asset("nmr/site/images/nmr_logo.gif")} alt="No Milk Records" width="54" height="40" /></a>
-          <p className="masthead__address"><strong>No Milk Records</strong><br />P.O. Box 1229 Jackson, NJ<br />08527 United States</p>
+          <a className="masthead__logo" href="./index.html"><img src={asset("nmr/site/images/nmr_logo.gif")} alt="GIFmilk Records" width="54" height="40" /></a>
+          <p className="masthead__address"><strong>GIFmilk Records</strong><br />P.O. Box 1229 Jackson, NJ<br />08527 United States</p>
         </div>
         <nav className="nav" aria-label="Site">
           {NAV.map((g) => {

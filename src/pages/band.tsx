@@ -61,7 +61,7 @@ function Releases() {
   const to = Math.max(rs.length, 3);
   const fill = Array.from({ length: to - rs.length }, (_, i) => rs[i % rs.length]);
   return (
-    <Band id="releases" title={`${band.name} on No Milk`} lesson={`${rs.length === 1 ? "One record" : `${rs.length} records`} on the label: ${rs.map((r) => `${r.title} (${r.catalog})`).join("; ")}. Open a cover for the facts.`} note={`from=1 to=${to} · placement="bottom" · clockwise=true · catalogue numbers fill the rest`}>
+    <Band id="releases" title={`${band.name} on GIFmilk`} lesson={`${rs.length === 1 ? "One record" : `${rs.length} records`} on the label: ${rs.map((r) => `${r.title} (${r.catalog})`).join("; ")}. Open a cover for the facts.`} note={`from=1 to=${to} · placement="bottom" · clockwise=true · catalogue numbers fill the rest`}>
       <GoldenGrid from={1} to={to} placement="bottom">
         {rs.map((r) => <GoldenBox key={r.catalog} {...x.boxProps(r.catalog)}><ReleaseCard r={r} x={x} /></GoldenBox>)}
         {fill.map((r, i) => <GoldenBox key={`f${i}`}><Fact label={i === 0 ? "Catalogue" : r.facts[0] ?? "Release"} fitClass="fit--num" tone={i % 2 ? undefined : "ink"}>{i === 0 ? r.catalog : (r.facts.find((f) => /running time/i.test(f)) ?? r.facts[0] ?? r.catalog).replace(/^Running Time:\s*/i, "").replace(/ minutes? /, "′ ").replace(/ seconds?/, "″")}</Fact></GoldenBox>)}

@@ -1,4 +1,4 @@
-# Layout study 05 — No Milk Records
+# Layout study 05 — No Milk Records, as GIFmilk Records
 
 **Live:** https://gregoryedgerton.github.io/golden-grids-study-05-nmr/
 
@@ -9,7 +9,11 @@ site, 104 pages of news, bands, releases, reviews, tours, store, audio,
 video, icons and wallpapers, is rebuilt as seventeen pages of golden grids.
 The copy, photographs, artwork, recordings and video are the label's own and
 are used with its owner's permission; this is the one study in the series
-built from its reference's actual content. Built with
+built from its reference's actual content. On the page the label goes by a
+parody name, GIFmilk Records: wherever the site's own text says No Milk, or
+NMR as the label's short name, the page says GIFmilk (`src/data.ts` renames it
+as the crawl is read; the crawl itself is unchanged). Catalogue numbers, web
+addresses, file names and pictures, including the NMR logo, are as they were. Built with
 [Golden Grids](https://github.com/gregoryedgerton/golden-grids) from the
 [study template](https://github.com/gregoryedgerton/golden-grids-study-template).
 
